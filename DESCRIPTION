@@ -1,0 +1,19 @@
+Package: TestingPackage
+Type: Package
+Title: Calculates Information Criteria Values
+Version: 0.1.0
+Authors@R: person("A", "Silva", email = "asilva@rstudio.com", role = c("aut", "cre"))
+Maintainer: A Silva <asilva@rstudio.com>
+Description: Calculates information criteria values, specifically of AIC, BIC and ICL.
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1.0)
+Imports: 
+    Rcpp (>= 1.0.2),
+    mclust,
+    stats
+License: MIT + file LICENSE
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat
