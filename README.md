@@ -3,23 +3,20 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of TestingPackage is to ...
+The goal of TestingPackage is to demonstrate how to develop a simple R package. 
 
 ## Installation
 
-You can install the released version of TestingPackage from [CRAN](https://CRAN.R-project.org) with:
+You can install the latest version of TestingPackage using
 
 ``` r
-install.packages("TestingPackage")
+devtools::install_github("anjalisilva/nonexonmap")
+library("TestingPackage")
 ```
 
-## Example
+## Overview
 
-This is a basic example which shows you how to solve a common problem:
+An overview of the package is illustrated below. 
 
-``` r
-library(TestingPackage)
-## basic example code
-```
 ![](./inst/extdata/SILVA_A_A1.png)
 
