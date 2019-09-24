@@ -10,7 +10,8 @@ The goal of TestingPackage is to demonstrate how to develop a simple R package.
 You can install the latest version of TestingPackage using
 
 ``` r
-devtools::install_github("anjalisilva/TestingPackage")
+require("devtools")
+install_github("anjalisilva/TestingPackage")
 library("TestingPackage")
 ```
 
