@@ -21,4 +21,5 @@ This is a basic example which shows you how to solve a common problem:
 library(TestingPackage)
 ## basic example code
 ```
+![](./inst/extdata/SILVA_A_A1.png)
 
