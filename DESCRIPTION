@@ -8,6 +8,7 @@ Description: Calculates information criteria values, specifically of AIC, BIC an
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.1.0)
+biocViews:
 Imports: 
     Rcpp (>= 1.0.2),
     mclust,
