@@ -3,7 +3,7 @@
 export(InfCriteria_plot)
 export(InfCriteria_v3)
 export(NormFactors)
-import(graphics)
 import(mclust)
 import(stats)
 importFrom(edgeR,calcNormFactors)
+importFrom(ggplot2,ggplot)

@@ -7,14 +7,13 @@
 NormFactors(dataset)
 }
 \arguments{
-\item{dataset}{A negative value of class "numeric" indicating
-the log-likelihood}
+\item{dataset}{A matrix with n observations along rows and d dimensions.}
 }
 \value{
 Returns an object, norm_factors, with normalization factors.
 }
 \description{
-A function that calculate normalization factors via TMM
+A function that calculate normalization factors via TMM given a dataset
 }
 \examples{
   dim(GeneCounts)

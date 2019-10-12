@@ -24,11 +24,13 @@ InfCriteria_plot <- function(inf_values) {
                             names = c("BIC", "AIC", "ICL"))
 
   # plotting the information criteria values
-  plot_axis <- ggplot2::ggplot(Data_toPlot, aes(names, data)) +
-               geom_point() + theme(panel.grid.major = element_blank(),
-               panel.grid.minor = element_blank(),
-               panel.background = element_blank(),
-               axis.line = element_line(colour = "black"))
+  plot_axis <- ggplot2::ggplot(data = Data_toPlot,
+               ggplot2::aes(names, data)) +
+               ggplot2::geom_point() +
+               ggplot2::theme(panel.grid.major =  ggplot2::element_blank(),
+               panel.grid.minor =  ggplot2::element_blank(),
+               panel.background =  ggplot2::element_blank(),
+               axis.line =  ggplot2::element_line(colour = "black"))
 
   return(plot_axis)
 }
