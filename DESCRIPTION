@@ -11,7 +11,8 @@ Depends: R (>= 3.1.0)
 Imports: 
     Rcpp (>= 1.0.2),
     mclust,
-    stats
+    stats,
+    edgeR
 License: MIT + file LICENSE
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
