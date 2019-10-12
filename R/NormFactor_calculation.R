@@ -1,9 +1,8 @@
 #' Calculate Norm Factors
 #'
-#' A function that calculate normalization factors via TMM
+#' A function that calculate normalization factors via TMM given a dataset
 #'
-#' @param dataset A negative value of class "numeric" indicating
-#'    the log-likelihood
+#' @param dataset A matrix with n observations along rows and d dimensions.
 #'
 #' @return Returns an object, norm_factors, with normalization factors.
 #'
