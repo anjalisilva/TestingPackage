@@ -16,14 +16,20 @@
 #' InfCriteria_plot(inf_values = InfCriteria_results)
 #'
 #' @export
-#' @import graphics
+#' @importFrom ggplot2 ggplot
 InfCriteria_plot <- function(inf_values) {
 
+  # saving data into a dataframe
+  Data_toPlot <- data.frame(data = unlist(inf_values),
+                            names = c("BIC", "AIC", "ICL"))
+
   # plotting the information criteria values
-  plot_example <- graphics::plot(unlist(inf_values), type = "p",
-    ylab = "Inf. Criteria Value", xlab = "Inf. Criterion",
-    xaxt = "n")
-  plot_axis <- plot_example + axis(1, at = 1:3, labels = c("BIC", "AIC", "ICL"))
+  plot_axis <- ggplot2::ggplot(Data_toPlot, aes(names, data)) +
+               geom_point() + theme(panel.grid.major = element_blank(),
+               panel.grid.minor = element_blank(),
+               panel.background = element_blank(),
+               axis.line = element_line(colour = "black"))
+
   return(plot_axis)
 }
 

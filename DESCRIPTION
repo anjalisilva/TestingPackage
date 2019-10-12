@@ -13,7 +13,8 @@ Imports:
     Rcpp (>= 1.0.2),
     mclust,
     stats,
-    edgeR
+    edgeR,
+    ggplot2
 License: MIT + file LICENSE
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
