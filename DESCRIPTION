@@ -9,6 +9,7 @@ Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.1.0)
 biocViews:
+Remotes: github::hadley/ggplot2
 Imports: 
     Rcpp (>= 1.0.2),
     mclust,
