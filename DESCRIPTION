@@ -8,7 +8,8 @@ Description: Calculates information criteria values, specifically of AIC, BIC an
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.1.0)
-Remotes: github::hadley/ggplot2, bioc::3.9/edgeR
+biocViews:
+Remotes: github::hadley/ggplot2
 Imports: 
     Rcpp (>= 1.0.2),
     mclust,
