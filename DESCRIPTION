@@ -11,13 +11,17 @@ Depends: R (>= 3.1.0)
 biocViews:
 Remotes: github::hadley/ggplot2
 Imports: 
-    Rcpp (>= 1.0.2),
+    Rcpp,
     mclust,
     stats,
     edgeR,
-    ggplot2
+    ggplot2,
+    shiny
 License: MIT + file LICENSE
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 Suggests: 
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
