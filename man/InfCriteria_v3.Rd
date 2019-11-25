@@ -4,8 +4,7 @@
 \alias{InfCriteria_v3}
 \title{Calculates Information Criteria}
 \usage{
-InfCriteria_v3(loglikelihood, clusters, dimension, observations,
-  probability)
+InfCriteria_v3(loglikelihood, clusters, dimension, observations, probability)
 }
 \arguments{
 \item{loglikelihood}{A negative value of class "numeric" indicating
@@ -40,4 +39,9 @@ InfCriteria_results <- InfCriteria_v3(loglikelihood = -5080,
                                       probability = c(0.5, 0.5))
 InfCriteria_results$BICresults
 
+}
+\references{
+Akaike, H. (1973). Information theory and an extension of the maximum
+likelihood principle. In \emph{Second International Symposium on Information
+Theory}, New York, NY, USA, pp. 267–281. Springer Verlag. \href{https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15}{Link}
 }
