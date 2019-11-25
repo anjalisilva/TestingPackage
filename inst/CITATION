@@ -1,0 +1,12 @@
+citHeader("To cite TestingPackage in publications use:")
+
+citEntry(
+  entry    = "Unpublished",
+  title    = "TestPackages: Calculates Information Criteria Values",
+  author   = "Anjali Silva",
+  note     = "Unpublished",
+  year     = "2019",
+  textVersion = paste(
+
+  )
+)
