@@ -4,7 +4,7 @@
 <!-- badges: end -->
 
 ## Description
-The goal of TestingPackage is to demonstrate how to develop a simple R package. Insert a paragraph that describes the purpose of the package. Be sure to explain how your package add to or improve a current work flow in bioinformatics or computational biology (i.e., how is it unique?, what issue does it address?).
+The goal of TestingPackage is to demonstrate components of a simple R package. Insert a paragraph that describes the purpose of the package. Be sure to explain how your package add to or improve a current work flow in bioinformatics or computational biology (i.e., how is it unique?, what issue does it address?).
 
 
 ## Installation
