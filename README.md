@@ -87,6 +87,6 @@ The author of the package is Anjali Silva. The functions InfCriteria_v3() and In
 Akaike, H. (1973). Information theory and an extension of the maximum likelihood principle. In *Second International Symposium on Information Theory*, New York, NY, USA, pp. 267–281. Springer Verlag. https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15.
 
 
-Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464.
+Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464. https://projecteuclid.org/euclid.aos/1176344136.
 
 
