@@ -28,9 +28,9 @@ runTestingPackage()
 browseVignettes("TestingPackage")
 ```
 
-This package contains 4 functions to illustrate how a simple R package functions. The InfCriteria_v3 function makes use of functions from mclust R package to generate ICL values. The stats R package is used for generating multinomially distributed random number vectors. The InfCriteria_plot makes use of the graphics R package to generate a plot of information criteria values. InfCriteria_plot use of the graphics R package to generate a plot of information criteria values. NormFactors is a function that calculate normalization factors via TMM given a dataset using edgeR R package. runTestingPackage is the function that launches the shiny app for this package.
+This package contains 4 functions to illustrate how a simple R package functions. The InfCriteria_v3() function makes use of mclust R package to generate ICL values. The stats R package is used for generating multinomially distributed random number vectors. The InfCriteria_plot makes use of the graphics R package to generate a plot of information criteria values. InfCriteria_plot() makes use of the graphics R package to generate a plot of information criteria values. NormFactors() is a function that calculates normalization factors via TMM given a dataset using edgeR R package. runTestingPackage() is the function that launches the shiny app for this package.
 
-Refer to package vignettes for more details. 
+Refer to package vignettes for more details. The package tree structure is provided below (this is optional).
 
 ``` r
 TestingPackage 
@@ -74,23 +74,19 @@ An overview of the package is illustrated below.
 
 ## Contributions
 
-The author of the package is Anjali Silva. The functions available within this 
-package include:
-
 ``` r
 library("TestingPackage")
 lsf.str("package:TestingPackage")
 ```
 
-- InfCriteria_v3
-- InfCriteria_plot
-
-The functions InfCriteria_v3 and InfCriteria_plot were authored by Anjali. (If code has been used from another package, clearly state this: e.g., The functions InfCriteria_v3 was authored by Anjali. Part of the code for InfCriteria_v3 function has been taken from mclust R package. Section of the borrowed code is clearly indicated and referenced in the InfCriteria_calculation.R file, the R file corresponding to InfCriteria_v3 function and referenced in help file. Rest of the code was a contribution by Anjali. 
-
-The InfCriteria_plot was authored by Anjali.) 
+The author of the package is Anjali Silva. The functions InfCriteria_v3() and InfCriteria_plot() were authored by Anjali. (If code has been used from another package, clearly state this: e.g., The functions InfCriteria_v3 was authored by Anjali. Part of the code for InfCriteria_v3 function has been taken from mclust R package. Section of the borrowed code is clearly indicated and referenced in the InfCriteria_calculation.R file, the R file corresponding to InfCriteria_v3 function and referenced in help file. Rest of the code was a contribution by Anjali. The InfCriteria_plot was authored by Anjali.)
 
 
+## References
+
+Akaike, H. (1973). Information theory and an extension of the maximum likelihood principle. In *Second International Symposium on Information Theory*, New York, NY, USA, pp. 267–281. Springer Verlag. \href{https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15}{Link}
 
 
+Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464.
 
 
