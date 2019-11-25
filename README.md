@@ -92,4 +92,4 @@ Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statisti
 
 ## Acknowledgements
 
-This package was developed as part of an assessment for 2019 BCB410H: Applied Bioinformatics, University of Toronto, Toronto CANADA.
+This package was developed as part of an assessment for 2019 BCB410H: Applied Bioinformatics, University of Toronto, Toronto, CANADA.
