@@ -28,7 +28,7 @@ runTestingPackage()
 browseVignettes("TestingPackage")
 ```
 
-This package contains 4 functions to illustrate how a simple R package functions. The InfCriteria_v3() function makes use of mclust R package to generate ICL values. The stats R package is used for generating multinomially distributed random number vectors. The InfCriteria_plot makes use of the graphics R package to generate a plot of information criteria values. InfCriteria_plot() makes use of the graphics R package to generate a plot of information criteria values. NormFactors() is a function that calculates normalization factors via TMM given a dataset using edgeR R package. runTestingPackage() is the function that launches the shiny app for this package.
+This package contains 4 functions to demonstrate components of a simple R package. The InfCriteria_v3() function makes use of mclust R package to generate ICL values. The stats R package is used for generating multinomially distributed random number vectors. The InfCriteria_plot makes use of the graphics R package to generate a plot of information criteria values. InfCriteria_plot() makes use of the graphics R package to generate a plot of information criteria values. NormFactors() is a function that calculates normalization factors via TMM given a dataset using edgeR R package. runTestingPackage() is the function that launches the shiny app for this package.
 
 Refer to package vignettes for more details. The package tree structure is provided below (this is optional).
 
@@ -90,3 +90,6 @@ Akaike, H. (1973). Information theory and an extension of the maximum likelihood
 Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464. https://projecteuclid.org/euclid.aos/1176344136.
 
 
+## Acknowledgements
+
+This package was developed as part of an assessment for 2019 BCB410H: Applied Bioinformatics, University of Toronto, Toronto. CANADA
