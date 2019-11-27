@@ -13,7 +13,7 @@ To install the latest version of the package:
 
 ``` r
 require("devtools")
-install_github("anjalisilva/TestingPackage", build vignettes = TRUE))
+install_github("anjalisilva/TestingPackage", build vignettes = TRUE)
 library("TestingPackage")
 ```
 
