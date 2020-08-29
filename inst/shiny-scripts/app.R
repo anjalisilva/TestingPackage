@@ -14,3 +14,6 @@ server <- function(input, output) {
 }
 
 shinyApp(ui = ui, server = server)
+# This example is adapted from Learn Shiny - Video 
+# tutorials by Garrett Grolemund, 2015.
+# URL: https://shiny.rstudio.com/tutorial/.
