@@ -19,12 +19,12 @@
 #' }
 #'
 #' @examples
-#' InfCriteria_results <- InfCriteria_v3(loglikelihood = -5080,
+#' InfCriteriaResults <- InfCriteriaV3(loglikelihood = -5080,
 #'                                       clusters = 2,
 #'                                       dimension = 3,
 #'                                       observations = 1000,
 #'                                       probability = c(0.5, 0.5))
-#' InfCriteria_results$BICresults
+#' InfCriteriaResults$BICresults
 #'
 #' @references
 #'Akaike, H. (1973). Information theory and an extension of the maximum
@@ -34,7 +34,7 @@
 #' @export
 #' @import mclust
 #' @import stats
-InfCriteria_v3 <- function(loglikelihood, clusters, dimension,
+InfCriteriaV3 <- function(loglikelihood, clusters, dimension,
   observations, probability) {
 
   # Using a multinomial distribution to generate cluster memberships

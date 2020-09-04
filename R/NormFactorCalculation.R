@@ -8,17 +8,17 @@
 #'
 #' @examples
 #'   dim(GeneCounts)
-#'   norm_factors <- log(as.vector(edgeR::calcNormFactors(as.matrix(GeneCounts), method = "TMM")))
+#'   normGeneCounts <- NormFactors(dataset = GeneCounts)
 #'
 #' @export
 #' @importFrom edgeR calcNormFactors
 NormFactors <- function(dataset) {
 
-  norm_factors <- log(as.vector(edgeR::calcNormFactors(as.matrix(dataset), method = "TMM")))
+  normFactors <- log(as.vector(edgeR::calcNormFactors(as.matrix(dataset), method = "TMM")))
 
-  class(norm_factors) <- "NormFactors"
+  class(normFactors) <- "NormFactors"
 
-  return(norm_factors)
+  return(normFactors)
 }
 
 
