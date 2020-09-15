@@ -34,7 +34,7 @@ Overview
 browseVignettes("TestingPackage")
 ```
 
-This package contains 4 functions to demonstrate components of a simple R package. The InfCriteria\_v3() function makes use of mclust R package to generate ICL values. The stats R package is used for generating multinomially distributed random number vectors. The InfCriteria\_plot makes use of the graphics R package to generate a plot of information criteria values. InfCriteria\_plot() makes use of the graphics R package to generate a plot of information criteria values. NormFactors() is a function that calculates normalization factors via TMM given a dataset using edgeR R package. runTestingPackage() is the function that launches the shiny app for this package.
+This package contains 4 functions to demonstrate components of a simple R package. The InfCriteriaV3() function makes use of mclust R package to generate ICL values. The stats R package is used for generating multinomially distributed random number vectors. The InfCriteriaPlot() makes use of the graphics R package to generate a plot of information criteria values. InfCriteriaPlot() makes use of the graphics R package to generate a plot of information criteria values. NormFactors() is a function that calculates normalization factors via TMM given a dataset using edgeR R package. runTestingPackage() is the function that launches the shiny app for this package.
 
 Refer to package vignettes for more details. The package tree structure is provided below (this is optional).
 
@@ -85,7 +85,9 @@ library("TestingPackage")
 lsf.str("package:TestingPackage")
 ```
 
-The author of the package is Anjali Silva. The functions InfCriteria\_v3() and InfCriteria\_plot() were authored by Anjali. (If code has been used from another package, clearly state this: e.g., The functions InfCriteria\_v3 was authored by Anjali. Part of the code for InfCriteria\_v3 function has been taken from mclust R package. Section of the borrowed code is clearly indicated and referenced in the InfCriteria\_calculation.R file, the R file corresponding to InfCriteria\_v3 function and referenced in help file. Rest of the code was a contribution by Anjali. The InfCriteria\_plot was authored by Anjali.)
+The author of the package is Anjali Silva. The functions InfCriteriaV3() and InfCriteriaPlot() were authored by Anjali. 
+(If code has been used from another package, clearly state this: e.g., The functions InfCriteriaV3 was authored by Anjali. Part of the code for InfCriteriaV3 function has been taken from mclust R package. Section of the borrowed code is clearly indicated and referenced in InfCriteriaV3 function and referenced in help file. Rest of the code was a contribution by Anjali.)
+The InfCriteriaPlot was authored by Anjali.
 
 References
 ----------
@@ -97,4 +99,4 @@ Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statisti
 Acknowledgements
 ----------------
 
-This package was developed as part of an assessment for 2019 BCB410H: Applied Bioinformatics, University of Toronto, Toronto, CANADA.
+This package was developed as part of an assessment for 2019-2020 BCB410H: Applied Bioinformatics, University of Toronto, Toronto, CANADA.
