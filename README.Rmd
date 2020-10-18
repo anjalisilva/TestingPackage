@@ -45,7 +45,7 @@ ls("package:TestingPackage")
 data(package = "TestingPackage") # optional
 ```
 
-After this command, provide an overview that briefly describes the main components of the package. Point the user to vignettes for more details. Include an image illustrating the overview of the package. 
+After these commands, provide an overview that briefly describes the main components of the package. Point the user to vignettes for more details. Include an image illustrating the overview of the package. 
 
 E.g., `TestingPackage` contains 4 functions to demonstrate components of a simple R package. The *InfCriteriaCalculation* function calculates the information criteria values. Specifically, Bayesian information criterion (BIC), Akaike information criterion (AIC) and Integrated Complete Likelihood (ICL) are calculated. The *InfCriteriaPlot* generates a plot of information criteria values. *NormFactors* is a function that calculates normalization factors via Trimmed Mean of M-values (TMM). The *runTestingPackage* is the function that launches the shiny app for this package. The package also contains RNA sequencing dataset GeneCounts. Refer to package vignettes for more details.
 
