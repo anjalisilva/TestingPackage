@@ -19,11 +19,11 @@
 #' }
 #'
 #' @examples
-#' InfCriteriaResults <- InfCriteriaV3(loglikelihood = -5080,
-#'                                       clusters = 2,
-#'                                       dimension = 3,
-#'                                       observations = 1000,
-#'                                       probability = c(0.5, 0.5))
+#' InfCriteriaResults <- InfCriteriaCalculation(loglikelihood = -5080,
+#'                                              clusters = 2,
+#'                                              dimension = 3,
+#'                                              observations = 1000,
+#'                                              probability = c(0.5, 0.5))
 #' InfCriteriaResults$BICresults
 #'
 #' @references
