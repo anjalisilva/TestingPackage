@@ -14,7 +14,8 @@
 #' @importFrom edgeR calcNormFactors
 NormFactors <- function(dataset) {
 
-  normFactors <- log(as.vector(edgeR::calcNormFactors(as.matrix(dataset), method = "TMM")))
+  normFactors <- log(as.vector(edgeR::calcNormFactors(as.matrix(dataset),
+    method = "TMM")))
 
   class(normFactors) <- "NormFactors"
 
