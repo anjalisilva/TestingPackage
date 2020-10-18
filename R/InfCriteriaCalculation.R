@@ -31,37 +31,44 @@
 #'likelihood principle. In \emph{Second International Symposium on Information
 #'Theory}, New York, NY, USA, pp. 267–281. Springer Verlag. \href{https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15}{Link}
 #'
+#'Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture model for
+#'clustering with the integrated classification likelihood. \emph{IEEE Transactions on Pattern
+#'Analysis and Machine Intelligence} 22. \href{https://hal.inria.fr/inria-00073163/document}{Link}
+#'
+#'Schwarz, G. (1978). Estimating the dimension of a model. \emph{The Annals of Statistics} 6, 461–464.
+#'\href{https://projecteuclid.org/euclid.aos/1176344136}{Link}.
+#'
 #' @export
 #' @import mclust
 #' @import stats
-InfCriteriaV3 <- function(loglikelihood, clusters, dimension,
+InfCriteriaCalculation <- function(loglikelihood, clusters, dimension,
   observations, probability) {
 
   # Using a multinomial distribution to generate cluster memberships
-  z <- t(stats::rmultinom(100, size = 1, prob = probability))
+  zValue <- t(stats::rmultinom(100, size = 1, prob = probability))
 
   # Calculating the number of parameters
-  k <- ((dimension + 1) * dimension) / 2 + dimension + (clusters - 1)
+  kParameters <- ((dimension + 1) * dimension) / 2 + dimension + (clusters - 1)
 
   # Calculating BIC
-  BIC <- - 2 * loglikelihood + (k * log(observations))
+  BIC <- - 2 * loglikelihood + (kParameters * log(observations))
 
   # Calculating AIC
-  AIC <- - 2 * loglikelihood + (2 * k)
+  AIC <- - 2 * loglikelihood + (2 * kParameters)
 
   # Calculating ICL
-  mapz <- mclust::unmap(mclust::map(z[, 1:clusters]))
-  forICL <- function(g) {sum(log(z[which(mapz[, g] == 1), g]))}
+  mapz <- mclust::unmap(mclust::map(zValue[, 1:clusters]))
+  forICL <- function(gClusters)
+    {sum(log(zValue[which(mapz[, gClusters] == 1), gClusters]))}
   ICL <- (BIC + sum(sapply(1:clusters, forICL)))
 
   Results <- list(BICresults = BIC,
                   AICresults = AIC,
                   ICLresults = ICL)
-  class(Results) <- "InfCriteria"
-
+  class(Results) <- "InfCriteriaCalculation"
   return(Results)
 }
-
+# [END]
 
 
 
