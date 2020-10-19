@@ -59,7 +59,7 @@ The package tree structure is provided below (optional).
   |- inst
     CITATION
     |- extdata
-      |- SILVA A A1.png
+      |- SILVA_A_A1.png
     |- shiny-scripts 
         |- app.R
   |- man
