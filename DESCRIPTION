@@ -1,10 +1,10 @@
 Package: TestingPackage
 Type: Package
-Title: Calculates Information Criteria Values
+Title: Example R Package BCB410H
 Version: 0.1.0
-Authors@R: person("A", "Silva", email = "asilva@rstudio.com", role = c("aut", "cre"))
-Maintainer: A Silva <asilva@rstudio.com>
-Description: Calculates information criteria values, specifically of AIC, BIC and ICL.
+Authors@R: person("A", "Silva", email = "anjali.silva@uhnresearch.ca", role = c("aut", "cre"))
+Maintainer: Anjali Silva <anjali.silva@uhnresearch.ca>
+Description: An example package to illustrate components of an R package.
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.1.0)
