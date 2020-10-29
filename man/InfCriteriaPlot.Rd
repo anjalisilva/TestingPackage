@@ -18,8 +18,8 @@ A function that plots information criteria values
 }
 \examples{
 InfCriteriaResults <- InfCriteriaCalculation(loglikelihood = -5080,
-                                             clusters = 2,
-                                             dimension = 3,
+                                             nClusters = 2,
+                                             dimensionality = 3,
                                              observations = 1000,
                                              probability = c(0.5, 0.5))
 InfCriteriaPlot(infValues = InfCriteriaResults)

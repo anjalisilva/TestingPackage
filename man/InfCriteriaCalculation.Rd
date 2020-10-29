@@ -6,8 +6,8 @@
 \usage{
 InfCriteriaCalculation(
   loglikelihood,
-  clusters,
-  dimension,
+  nClusters,
+  dimensionality,
   observations,
   probability
 )
@@ -16,9 +16,9 @@ InfCriteriaCalculation(
 \item{loglikelihood}{A negative value of class "numeric" indicating
 the log-likelihood}
 
-\item{clusters}{A positive integer indicating the number of clusters}
+\item{nClusters}{A positive integer indicating the number of clusters}
 
-\item{dimension}{A positive integer indicating the dimension of dataset}
+\item{dimensionality}{A positive integer indicating the dimensionality of dataset}
 
 \item{observations}{A positive integer indicating the number of observations}
 
@@ -38,13 +38,31 @@ number of clusters, dimension of dataset, and number of observations,
 and the probability
 }
 \examples{
+# Using GeneCounts dataset available with package
+dim(GeneCounts)
+
+# Calculate information criteria value
 InfCriteriaResults <- InfCriteriaCalculation(loglikelihood = -5080,
-                                             clusters = 2,
-                                             dimension = 3,
-                                             observations = 1000,
+                                             nClusters = 2,
+                                             dimensionality = ncol(GeneCounts),
+                                             observations = nrow(GeneCounts),
                                              probability = c(0.5, 0.5))
 InfCriteriaResults$BICresults
 
+\dontrun{
+# Obtain an external sample RNAseq dataset
+library(MBCluster.Seq)
+data("Count")
+dim(Count)
+
+# Calculate information criteria value
+InfCriteriaResults <- InfCriteriaCalculation(loglikelihood = -5080,
+                                             nClusters = 2,
+                                             dimensionality = ncol(Count),
+                                             observations = nrow(Count),
+                                             probability = c(0.5, 0.5))
+InfCriteriaResults$BICresults
+}
 }
 \references{
 Akaike, H. (1973). Information theory and an extension of the maximum
