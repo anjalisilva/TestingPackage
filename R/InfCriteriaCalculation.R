@@ -64,61 +64,120 @@ InfCriteriaCalculation <- function(loglikelihood,
                                    dimensionality,
                                    observations,
                                    probability) {
-  
+
   # Performing checks of user input
   if (typeof(loglikelihood) != "double" & class(loglikelihood) != "numeric") {
     stop("Loglikelihood type needs to double")
   }
-  
+
   if(loglikelihood > 0) {
     stop("Loglikelihood should be a negative value.")
   }
-  
+
   if(nClusters <= 0) {
     stop("nClusters should be a positive integer indicating the number of clusters.")
   }
-  
+
   # An alternative to correct user input
   if(nClusters < 0) {
     warning("nClusters should be a positive integer indicating the number of clusters.
             Input value corrected to be positive.", call. = FALSE)
     nClusters <- abs(nClusters) # correct the input for user
   }
-  
+
   if(sum(probability) != 1) {
     stop("Input values for probability should sum to 1.")
   }
-  
-  
+
+
 
   # Start analysis
   # Using a multinomial distribution to generate cluster memberships
   # Provide a message to user about the number of clusters
   message("Generating data for ", nClusters, " clusters.")
   zValue <- t(stats::rmultinom(100, size = 1, prob = probability))
-  
+
   # Calculating the number of parameters
   kParameters <- ((dimensionality + 1) * dimensionality) / 2 +
     dimensionality + (nClusters - 1)
-  
+
   # Calculating BIC
   BIC <- - 2 * loglikelihood + (kParameters * log(observations))
-  
+
   # Calculating AIC
   AIC <- - 2 * loglikelihood + (2 * kParameters)
-  
+
   # Calculating ICL
   mapz <- mclust::unmap(mclust::map(zValue[, 1:nClusters]))
   forICL <- function(gClusters)
   {sum(log(zValue[which(mapz[, gClusters] == 1), gClusters]))}
   ICL <- (BIC + sum(sapply(1:nClusters, forICL)))
-  
+
   Results <- list(BICresults = BIC,
                   AICresults = AIC,
                   ICLresults = ICL)
-  
+
   class(Results) <- "InfCriteriaCalculation"
   return(Results)
 }
+
+# You can have more than function in a given script file
+
+#' Calculate Normalization Factors
+#'
+#' A function that calculate normalization factors via trimmed mean of
+#' M-values (TMM) given an RNA sequencing dataset containing raw counts.
+#'
+#' @param dataset A matrix of integers, with n observations along rows
+#'   and d dimensionsfor columns. Typically, d < n.
+#'
+#' @return Returns an object, norm_factors, with normalization factors.
+#'
+#' @examples
+#' dim(GeneCounts)
+#' normGeneCounts <- NormFactors(dataset = as.matrix(GeneCounts))
+#'
+#' @references
+#' Robinson, M. D., McCarthy, D. J. and Smyth, G. K. (2010). edgeR: a
+#' Bioconductor package for differential expression analysis of digital gene
+#' expression data. \emph{Bioinformatics}, 26, 139-140.
+#' \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/}{Link}
+#'
+#'  McCarthy, D. J., Chen, Y. and Smyth, G. K. (2012). Differential expression
+#'  analysis of multifactor RNA-Seq experiments with respect to biological
+#'  variation. \emph{Nucleic Acids Research}, 40, 4288-4297.
+#' \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3378882/}{Link}
+#'
+#' @export
+#' @importFrom edgeR calcNormFactors
+NormFactors <- function(dataset) {
+
+  # Performing checks of user input
+  if (typeof(dataset) != "double" & typeof(dataset) != "integer") {
+    stop("Argument dataset type needs to be integer.")
+  }
+
+  if (any((dataset %% 1 == 0) == FALSE)) {
+    stop("Argument dataset should be a matrix of counts.")
+  }
+
+  if (is.matrix(dataset) != TRUE) {
+    stop("Argument dataset needs to be a matrix.")
+  }
+
+  if (any(colSums(dataset) <= 0)) {
+    stop("Column sums of dataset cannot be less than or equal to 0.
+      Double check the dataset.")
+  }
+
+  # Uses the edgeR package to obtain normalization factors
+  normFactors <- log(as.vector(edgeR::calcNormFactors(as.matrix(dataset),
+    method = "TMM")))
+
+  class(normFactors) <- "NormFactors"
+
+  return(normFactors)
+}
+
 
 # [END]
