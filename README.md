@@ -151,10 +151,7 @@ Massachusetts: O’Reilly Media. <https://r-pkgs.org/>
 ## Acknowledgements
 
 This package was developed for BCB410H: Applied Bioinformatics,
-University of Toronto, Toronto, CANADA, 2019-2020.
-
-## Other
-
-`TestingPackage` welcomes issues, enhancement requests, and other
-contributions. To submit an issue, use the [GitHub
+University of Toronto, Toronto, CANADA, 2019-2020. `TestingPackage`
+welcomes issues, enhancement requests, and other contributions. To
+submit an issue, use the [GitHub
 issues](https://github.com/anjalisilva/TestingPackage/issues).
