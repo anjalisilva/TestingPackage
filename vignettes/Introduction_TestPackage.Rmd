@@ -55,6 +55,10 @@ data(package = "TestingPackage")
 
 The minimal requirements of an R package is described, followed by other components that are required for the purpose of this course. 
 
+<div style="text-align:center"><img src="SILVA_A_A1.png" alt="SILVA_A_A1" width="500"/>
+
+<div style="text-align:left">
+
 ### Minimal requirements
 
 * The **R subdirectory** within an R package contains all the R code files or script files. These are files ending with ".R". 
@@ -82,6 +86,8 @@ The minimal requirements of an R package is described, followed by other compone
 * The local project must be housed in a GitHub repository. There should be a record of the changes made to the package via Git commit messages. For the purpose of this course, ensure the **.Rproj** file is available on GitHub. Do NOT add it to .gitignore.
 
 <br>
+
+<div style="text-align:left">
 
 ## Package References
 
