@@ -77,7 +77,7 @@ The minimal requirements of an R package is described, followed by other compone
 
 * The **vignettes** subdirectory permit to include vignettes that provide an overview of the R package.
 
-* The **inst** subdirectory contains other files and subdirectories. **CITATION** file should be included here. Other subdirectories may include extdata and shiny-scripts. **Extdata** subdirectory can include images included in README file. The **shiny-scripts** subdirectory should include shiny script files (app.R). 
+* The **inst** subdirectory contains other files and subdirectories. **CITATION** file should be included here. Other subdirectories may include extdata and shiny-scripts. The **extdata** subdirectory can include images included in README file. The **shiny-scripts** subdirectory should include shiny script files (app.R). 
 
 * The local project must be housed in a GitHub repository. There should be a record of the changes made to the package via Git commit messages. For the purpose of this course, ensure the **.Rproj** file is available on GitHub. Do NOT add it to .gitignore.
 
