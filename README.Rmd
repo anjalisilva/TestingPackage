@@ -106,6 +106,9 @@ Provide full references for all sources used in one specific format. E.g.,
 
 Akaike, H. (1973). Information theory and an extension of the maximum likelihood principle. In *Second International Symposium on Information Theory*, New York, NY, USA, pp. 267–281. Springer Verlag. https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15.
 
+BioRender. (2020). Retrieved October 30, 2020, from https://app.biorender.com/
+
+
 Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture model for clustering with the integrated classification likelihood. *IEEE Transactions on Pattern Analysis and Machine Intelligence* 22. https://hal.inria.fr/inria-00073163/document
 
 R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
@@ -113,7 +116,6 @@ R Core Team (2020). R: A language and environment for statistical computing. R F
 Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464. https://projecteuclid.org/euclid.aos/1176344136.
 
 Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachusetts: O'Reilly Media. https://r-pkgs.org/
-
 
 ## Acknowledgements
 
