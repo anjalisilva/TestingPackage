@@ -129,13 +129,13 @@ likelihood principle. In *Second International Symposium on Information
 Theory*, New York, NY, USA, pp. 267–281. Springer Verlag.
 <https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15>.
 
-BioRender. (2020). Image created by Silva, A. Retrieved October 30,
-2020, from <https://app.biorender.com/>
-
 Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture
 model for clustering with the integrated classification likelihood.
 *IEEE Transactions on Pattern Analysis and Machine Intelligence* 22.
 <https://hal.inria.fr/inria-00073163/document>
+
+BioRender. (2020). Image created by Silva, A. Retrieved October 30,
+2020, from <https://app.biorender.com/>
 
 R Core Team (2020). R: A language and environment for statistical
 computing. R Foundation for Statistical Computing, Vienna, Austria.
