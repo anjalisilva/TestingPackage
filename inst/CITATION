@@ -2,11 +2,11 @@ citHeader("To cite TestingPackage in publications use:")
 
 citEntry(
   entry    = "Unpublished",
-  title    = "TestPackages: Calculates Information Criteria Values",
+  title    = "TestingPackage: An Example R Package For BCB410H",
   author   = "Anjali Silva",
   note     = "Unpublished",
-  year     = "2019",
+  year     = "2020",
   textVersion = paste(
-
+"Silva, A. (2020). TestingPackage: An Example R Package For BCB410H. Unpublished. URL https://github.com/anjalisilva/TestingPackage"
   )
 )
