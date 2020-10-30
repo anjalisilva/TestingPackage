@@ -6,7 +6,7 @@
 \usage{
 InfCriteriaCalculation(
   loglikelihood,
-  nClusters,
+  nClusters = 2,
   dimensionality,
   observations,
   probability
@@ -14,22 +14,22 @@ InfCriteriaCalculation(
 }
 \arguments{
 \item{loglikelihood}{A negative value of class "numeric" indicating
-the log-likelihood}
+the log-likelihood.}
 
-\item{nClusters}{A positive integer indicating the number of clusters}
+\item{nClusters}{A positive integer indicating the number of clusters. Default value is 2.}
 
-\item{dimensionality}{A positive integer indicating the dimensionality of dataset}
+\item{dimensionality}{A positive integer indicating the dimensionality of dataset.}
 
-\item{observations}{A positive integer indicating the number of observations}
+\item{observations}{A positive integer indicating the number of observations.}
 
-\item{probability}{A vector indicating the probability of each cluster}
+\item{probability}{A vector indicating the probability of each cluster.}
 }
 \value{
 Returns an S3 object of class InfCriteria with results.
 \itemize{
-\item BICresults - A value of class "numeric" indicating BIC value
-\item AICresults - A value of class "numeric" indicating AIC value
-\item ICLresults - A value of class "numeric" indicating ICL value
+\item BICresults - A value of class "numeric" indicating BIC value.
+\item AICresults - A value of class "numeric" indicating AIC value.
+\item ICLresults - A value of class "numeric" indicating ICL value.
 }
 }
 \description{

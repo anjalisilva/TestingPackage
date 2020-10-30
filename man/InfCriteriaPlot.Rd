@@ -11,7 +11,7 @@ InfCriteriaPlot(infValues)
 the log-likelihood corresponding to BIC, AIC and ICL, respectively.}
 }
 \value{
-Returns a plot of information criteria values
+Returns a plot of information criteria values.
 }
 \description{
 A function that plots information criteria values

@@ -5,7 +5,7 @@
 #' @param infValues A list of negative values of class "InfCriteria" indicating
 #'    the log-likelihood corresponding to BIC, AIC and ICL, respectively.
 #'
-#' @return Returns a plot of information criteria values
+#' @return Returns a plot of information criteria values.
 #'
 #' @examples
 #' InfCriteriaResults <- InfCriteriaCalculation(loglikelihood = -5080,

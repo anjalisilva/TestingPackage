@@ -5,17 +5,17 @@
 #' and the probability.
 #'
 #' @param loglikelihood A negative value of class "numeric" indicating
-#'    the log-likelihood
-#' @param nClusters A positive integer indicating the number of clusters
-#' @param dimensionality A positive integer indicating the dimensionality of dataset
-#' @param observations A positive integer indicating the number of observations
-#' @param probability A vector indicating the probability of each cluster
+#'    the log-likelihood.
+#' @param nClusters A positive integer indicating the number of clusters. Default value is 2.
+#' @param dimensionality A positive integer indicating the dimensionality of dataset.
+#' @param observations A positive integer indicating the number of observations.
+#' @param probability A vector indicating the probability of each cluster.
 #'
 #' @return Returns an S3 object of class InfCriteria with results.
 #' \itemize{
-#'   \item BICresults - A value of class "numeric" indicating BIC value
-#'   \item AICresults - A value of class "numeric" indicating AIC value
-#'   \item ICLresults - A value of class "numeric" indicating ICL value
+#'   \item BICresults - A value of class "numeric" indicating BIC value.
+#'   \item AICresults - A value of class "numeric" indicating AIC value.
+#'   \item ICLresults - A value of class "numeric" indicating ICL value.
 #' }
 #'
 #' @examples
@@ -60,7 +60,7 @@
 #' @import mclust
 #' @import stats
 InfCriteriaCalculation <- function(loglikelihood,
-                                   nClusters,
+                                   nClusters = 2,
                                    dimensionality,
                                    observations,
                                    probability) {
@@ -131,7 +131,7 @@ InfCriteriaCalculation <- function(loglikelihood,
 #' @param dataset A matrix of integers, with n observations along rows
 #'   and d dimensions for columns. Typically, d < n.
 #'
-#' @return Returns an object, norm_factors, with normalization factors.
+#' @return Returns an object, normFactors, with normalization factors.
 #'
 #' @examples
 #' dim(GeneCounts)

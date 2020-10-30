@@ -11,7 +11,7 @@ NormFactors(dataset)
 and d dimensions for columns. Typically, d < n.}
 }
 \value{
-Returns an object, norm_factors, with normalization factors.
+Returns an object, normFactors, with normalization factors.
 }
 \description{
 A function that calculate normalization factors via trimmed mean of
