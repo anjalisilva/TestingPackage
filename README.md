@@ -31,7 +31,7 @@ devtools::install_github("anjalisilva/TestingPackage", build_vignettes = TRUE)
 library("TestingPackage")
 ```
 
-To run the shinyApp:
+To run the Shiny app:
 
 ``` r
 runTestingPackage()
