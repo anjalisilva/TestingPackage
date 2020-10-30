@@ -8,7 +8,7 @@ NormFactors(dataset)
 }
 \arguments{
 \item{dataset}{A matrix of integers, with n observations along rows
-and d dimensionsfor columns. Typically, d < n.}
+and d dimensions for columns. Typically, d < n.}
 }
 \value{
 Returns an object, norm_factors, with normalization factors.

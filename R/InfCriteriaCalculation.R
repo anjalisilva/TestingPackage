@@ -2,7 +2,7 @@
 #'
 #' A function that calculates information criteria given log-likelihood,
 #' number of clusters, dimension of dataset, and number of observations,
-#' and the probability
+#' and the probability.
 #'
 #' @param loglikelihood A negative value of class "numeric" indicating
 #'    the log-likelihood
@@ -129,7 +129,7 @@ InfCriteriaCalculation <- function(loglikelihood,
 #' M-values (TMM) given an RNA sequencing dataset containing raw counts.
 #'
 #' @param dataset A matrix of integers, with n observations along rows
-#'   and d dimensionsfor columns. Typically, d < n.
+#'   and d dimensions for columns. Typically, d < n.
 #'
 #' @return Returns an object, norm_factors, with normalization factors.
 #'

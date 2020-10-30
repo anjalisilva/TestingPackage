@@ -35,7 +35,7 @@ Returns an S3 object of class InfCriteria with results.
 \description{
 A function that calculates information criteria given log-likelihood,
 number of clusters, dimension of dataset, and number of observations,
-and the probability
+and the probability.
 }
 \examples{
 # Using GeneCounts dataset available with package
