@@ -10,7 +10,7 @@ runTestingPackage()
 No return value but open up a shiny page.
 }
 \description{
-A function that launches the shiny app for this package.
+A function that launches the shiny app for TestingPackage.
 The code has been placed in \code{./inst/shiny-scripts}.
 }
 \examples{

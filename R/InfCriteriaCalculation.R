@@ -175,7 +175,6 @@ NormFactors <- function(dataset) {
     method = "TMM")))
 
   class(normFactors) <- "NormFactors"
-
   return(normFactors)
 }
 

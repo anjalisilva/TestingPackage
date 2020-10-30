@@ -35,5 +35,5 @@ InfCriteriaPlot <- function(infValues) {
   return(plotAxis)
 }
 
-
+# [END]
 

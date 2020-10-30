@@ -1,6 +1,6 @@
 #' Launch the shiny app for package TestingPackage
 #'
-#' A function that launches the shiny app for this package.
+#' A function that launches the shiny app for TestingPackage.
 #' The code has been placed in \code{./inst/shiny-scripts}.
 #'
 #' @return No return value but open up a shiny page.
@@ -19,3 +19,5 @@ runTestingPackage <- function() {
   shiny::runApp(appDir, display.mode = "normal")
   return()
 }
+
+# [END]
