@@ -71,9 +71,9 @@ The minimal requirements of an R package is described, followed by other compone
 
 * **LICENSE** file describing who can use the R package. 
 
-* **Data** subdirectory with data (.rda) is included to demonstrate utility of functions in the package with this data. If data is included, proper documentation for data must be provided using data.R file. Including data, however, is optional. If not providing own data, must show examples with external datasets so user of the package can still understand utility of each function. 
+* The **data** subdirectory with data (.rda) is included to demonstrate utility of functions in the package with this data. If data is included, proper documentation for data must be provided using data.R file. Including data, however, is optional. If not providing own data, must show examples with external datasets so user of the package can still understand utility of each function. 
 
-* **Tests** subdirectory includes the testthat subdirectory, which has test that are written to see if functions are working as expected. There should be unit tests and integration tests. 
+* The **tests** subdirectory includes the testthat subdirectory, which has test that are written to see if functions are working as expected. There should be unit tests and integration tests. 
 
 * The **vignettes** subdirectory permit to include vignettes that provide an overview of the R package.
 
