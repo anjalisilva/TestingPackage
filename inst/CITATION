@@ -7,6 +7,6 @@ citEntry(
   note     = "Unpublished",
   year     = "2020",
   textVersion = paste(
-"Silva, A. (2020). TestingPackage: An Example R Package For BCB410H. Unpublished. URL https://github.com/anjalisilva/TestingPackage"
+"Silva, A. (2020) TestingPackage: An Example R Package For BCB410H. Unpublished. URL https://github.com/anjalisilva/TestingPackage"
   )
 )
