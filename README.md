@@ -100,7 +100,11 @@ Akaike, H. (1973). Information theory and an extension of the maximum likelihood
 
 Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture model for clustering with the integrated classification likelihood. *IEEE Transactions on Pattern Analysis and Machine Intelligence* 22. <https://hal.inria.fr/inria-00073163/document>
 
+R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. <https://www.R-project.org/>
+
 Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464. <https://projecteuclid.org/euclid.aos/1176344136>.
+
+Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachusetts: O'Reilly Media. <https://r-pkgs.org/>
 
 Acknowledgements
 ----------------
