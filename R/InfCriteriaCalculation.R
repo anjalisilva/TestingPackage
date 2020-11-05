@@ -67,12 +67,18 @@ InfCriteriaCalculation <- function(loglikelihood,
 
   # Performing checks of user input
   if (typeof(loglikelihood) != "double" & class(loglikelihood) != "numeric") {
-    stop("Loglikelihood type needs to double")
+    stop("Loglikelihood should be a negative value of class numeric indicating
+         the log-likelihood.")
   }
 
   if(loglikelihood > 0) {
     stop("Loglikelihood should be a negative value.")
   }
+
+  if(is.numeric(nClusters) == FALSE) {
+    stop("nClusters should be a positive integer indicating the number of clusters.")
+  }
+
 
   if(nClusters <= 0) {
     stop("nClusters should be a positive integer indicating the number of clusters.")
@@ -83,6 +89,20 @@ InfCriteriaCalculation <- function(loglikelihood,
     warning("nClusters should be a positive integer indicating the number of clusters.
             Input value corrected to be positive.", call. = FALSE)
     nClusters <- abs(nClusters) # correct the input for user
+  }
+
+
+  if(is.numeric(dimensionality) == FALSE) {
+    stop("dimensionality should be a positive integer indicating the positive integer
+         indicating the dimensionality of dataset.")
+  }
+
+  if(is.numeric(observations) == FALSE) {
+    stop("observations positive integer indicating the number of observations.")
+  }
+
+  if(is.numeric(probability) == FALSE) {
+    stop("probability should be a numeric vector indicating the probability of each cluster.")
   }
 
   if(sum(probability) != 1) {
