@@ -6,7 +6,8 @@
 #'
 #' @param loglikelihood A negative value of class "numeric" indicating
 #'    the log-likelihood.
-#' @param nClusters A positive integer indicating the number of clusters. Default value is 2.
+#' @param nClusters A positive integer indicating the number of clusters.
+#'    Default value is 2.
 #' @param dimensionality A positive integer indicating the dimensionality of dataset.
 #' @param observations A positive integer indicating the number of observations.
 #' @param probability A vector indicating the probability of each cluster.
@@ -19,31 +20,55 @@
 #' }
 #'
 #' @examples
+#' # Examples 1:
 #' # Using GeneCounts dataset available with package
 #' dim(GeneCounts)
 #'
 #' # Calculate information criteria value
-#' InfCriteriaResults <- InfCriteriaCalculation(loglikelihood = -5080,
-#'                                              nClusters = 2,
-#'                                              dimensionality = ncol(GeneCounts),
-#'                                              observations = nrow(GeneCounts),
-#'                                              probability = c(0.5, 0.5))
+#' InfCriteriaResults <- InfCriteriaCalculation(
+#'                           loglikelihood = -5080,
+#'                           nClusters = 2,
+#'                           dimensionality = ncol(GeneCounts),
+#'                           observations = nrow(GeneCounts),
+#'                           probability = c(0.5, 0.5))
 #' InfCriteriaResults$BICresults
 #'
-#' \dontrun{
+#' # Examples 2:
 #' # Obtain an external sample RNAseq dataset
+#' \dontrun{
 #' library(MBCluster.Seq)
 #' data("Count")
 #' dim(Count)
 #'
 #' # Calculate information criteria value
-#' InfCriteriaResults <- InfCriteriaCalculation(loglikelihood = -5080,
-#'                                              nClusters = 2,
-#'                                              dimensionality = ncol(Count),
-#'                                              observations = nrow(Count),
-#'                                              probability = c(0.5, 0.5))
+#' InfCriteriaResults <- InfCriteriaCalculation(
+#'                           loglikelihood = -5080,
+#'                           nClusters = 2,
+#'                           dimensionality = ncol(Count),
+#'                           observations = nrow(Count),
+#'                           probability = c(0.5, 0.5))
 #' InfCriteriaResults$BICresults
 #'}
+#'
+#' # Example 3:
+#' # Another way to obtain external data from another
+#' # package that is only used for the example:
+#' # More info, see: https://r-pkgs.org/r-cmd-check.html
+#'
+#' if (requireNamespace("RTCGA.rnaseq", quietly = TRUE)) {
+#' library(RTCGA.rnaseq)
+#' dim(ACC.rnaseq) # 79 20532
+#'
+#' # Calculate information criteria value
+#' InfCriteriaResults <- InfCriteriaCalculation(
+#'                           loglikelihood = -5080,
+#'                           nClusters = 2,
+#'                           dimensionality = nrow(ACC.rnaseq),
+#'                           observations = ncol(ACC.rnaseq),
+#'                           probability = c(0.5, 0.5))
+#' InfCriteriaResults$BICresults
+#' }
+#'
 #' @references
 #'Akaike, H. (1973). Information theory and an extension of the maximum
 #'likelihood principle. In \emph{Second International Symposium on Information
