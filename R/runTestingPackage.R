@@ -1,14 +1,19 @@
-#' Launch the shiny app for package TestingPackage
+#' Launch Shiny App for TestingPackage
 #'
-#' A function that launches the shiny app for TestingPackage.
-#' The code has been placed in \code{./inst/shiny-scripts}.
+#' A function that launches the Shiny app for TestingPackage.
+#' The purpose of this app is only to illustrate how a Shiny
+#' app works. The code has been placed in \code{./inst/shiny-scripts}.
 #'
-#' @return No return value but open up a shiny page.
+#' @return No return value but open up a Shiny page.
 #'
 #' @examples
 #' \dontrun{
-#' runTestingPackage()
+#'
+#' TestingPackage::runTestingPackage()
 #' }
+#'
+#' @references
+#' Grolemund, G. (2015). Learn Shiny - Video Tutorials. \href{https://shiny.rstudio.com/tutorial/}{Link}
 #'
 #' @export
 #' @importFrom shiny runApp
@@ -19,5 +24,4 @@ runTestingPackage <- function() {
   shiny::runApp(appDir, display.mode = "normal")
   return()
 }
-
 # [END]

@@ -1,4 +1,6 @@
 library(shiny)
+# This example is adapted from
+# Grolemund, G. (2015). Learn Shiny - Video Tutorials. URL:https://shiny.rstudio.com/tutorial/
 
 ui <- fluidPage(
   sliderInput(inputId = "num",
@@ -9,11 +11,10 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   output$hist <- renderPlot({
-    hist(rnorm(input$num))
+    hist(rnorm(input$num),
+         xlab = "Value",
+         main = "Histogram of User Input Values")
   })
 }
-
-shinyApp(ui = ui, server = server)
-# This example is adapted from Learn Shiny - Video 
-# tutorials by Garrett Grolemund, 2015.
-# URL: https://shiny.rstudio.com/tutorial/.
+shiny::shinyApp(ui = ui, server = server)
+# [END]

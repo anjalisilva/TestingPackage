@@ -2,20 +2,25 @@
 % Please edit documentation in R/runTestingPackage.R
 \name{runTestingPackage}
 \alias{runTestingPackage}
-\title{Launch the shiny app for package TestingPackage}
+\title{Launch Shiny App for TestingPackage}
 \usage{
 runTestingPackage()
 }
 \value{
-No return value but open up a shiny page.
+No return value but open up a Shiny page.
 }
 \description{
-A function that launches the shiny app for TestingPackage.
-The code has been placed in \code{./inst/shiny-scripts}.
+A function that launches the Shiny app for TestingPackage.
+The purpose of this app is only to illustrate how a Shiny
+app works. The code has been placed in \code{./inst/shiny-scripts}.
 }
 \examples{
 \dontrun{
-runTestingPackage()
+
+TestingPackage::runTestingPackage()
 }
 
+}
+\references{
+Grolemund, G. (2015). Learn Shiny - Video Tutorials. \href{https://shiny.rstudio.com/tutorial/}{Link}
 }
