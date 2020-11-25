@@ -155,3 +155,11 @@ University of Toronto, Toronto, CANADA, 2019-2020. `TestingPackage`
 welcomes issues, enhancement requests, and other contributions. To
 submit an issue, use the [GitHub
 issues](https://github.com/anjalisilva/TestingPackage/issues).
+
+## Student Packages
+
+Packages developed by BCB410 students:
+
+  - [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)
+
+  - [microCompet](https://github.com/MolyWang/microCompet)
