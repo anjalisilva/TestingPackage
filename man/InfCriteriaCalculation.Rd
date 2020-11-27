@@ -86,6 +86,26 @@ InfCriteriaResults <- InfCriteriaCalculation(
                           observations = ncol(ACC.rnaseq),
                           probability = c(0.5, 0.5))
 InfCriteriaResults$BICresults
+
+
+# Examples 4:
+# Access raw data made available with this package
+inputCountsPath <- system.file("extdata", "GeneCounts.csv", package = "TestingPackage")
+# Read data
+inputCounts <- read.csv(file = inputCountsPath, header = TRUE)
+dim(inputCounts) # 30  4
+
+# To see documentation for data, made available seperately
+?GeneCounts
+
+# Calculate information criteria value
+InfCriteriaResults <- InfCriteriaCalculation(
+                          loglikelihood = -5080,
+                          nClusters = 2,
+                          dimensionality = nrow(inputCounts),
+                          observations = ncol(inputCounts),
+                          probability = c(0.5, 0.5))
+InfCriteriaResults$BICresults
 }
 
 }
