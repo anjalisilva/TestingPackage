@@ -25,8 +25,10 @@ InfCriteriaPlot <- function(infValues) {
 
   # plotting the information criteria values
   plotAxis <- ggplot2::ggplot(data = DataToPlot,
-                             ggplot2::aes(x = "names", y="data")) +
+                             ggplot2::aes(x = names, y = data)) +
                              ggplot2::geom_point() +
+                             ggplot2::labs(title = "Plot of information criteria values",
+                             x = "Criterion", y = "Value") +
                              ggplot2::theme(panel.grid.major =  ggplot2::element_blank(),
                              panel.grid.minor =  ggplot2::element_blank(),
                              panel.background =  ggplot2::element_blank(),
