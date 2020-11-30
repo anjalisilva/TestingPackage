@@ -19,6 +19,8 @@
 #' @importFrom ggplot2 ggplot
 InfCriteriaPlot <- function(infValues) {
 
+  data <- NULL
+
   # saving data into a dataframe
   DataToPlot <- data.frame(data = unlist(infValues),
                             names = c("BIC", "AIC", "ICL"))
