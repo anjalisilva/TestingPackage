@@ -128,3 +128,5 @@ Packages developed by BCB410 students:
 * [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)
 
 * [microCompet](https://github.com/MolyWang/microCompet)
+
+* [uniprotProteinView](https://github.com/zzaassaa2/uniprotProteinView)
