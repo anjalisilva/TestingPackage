@@ -130,3 +130,7 @@ Packages developed by BCB410 students:
 * [microCompet](https://github.com/MolyWang/microCompet)
 
 * [uniprotProteinView](https://github.com/zzaassaa2/uniprotProteinView)
+
+* [MethylExpress](https://github.com/diannamcallister/MethylExpress)
+
+* [dynUGENE](https://github.com/tianyu-lu/dynUGENE)
