@@ -172,4 +172,6 @@ Packages developed by BCB410 students:
 
   - [pdb3D](https://github.com/kevin949373048/pdb3D)
 
+  - [STRExpansionAnalyzer](https://github.com/michaelzwong/STRExpansionAnalyzer)
+
   - [CellTyPETool](https://github.com/meconsens/CellTyPETool)
