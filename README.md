@@ -175,3 +175,5 @@ Packages developed by BCB410 students:
   - [STRExpansionAnalyzer](https://github.com/michaelzwong/STRExpansionAnalyzer)
 
   - [CellTyPETool](https://github.com/meconsens/CellTyPETool)
+
+  - [ChIPanalyzer](https://github.com/RyDe4/ChIPanalyzer)
