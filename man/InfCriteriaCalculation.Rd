@@ -23,7 +23,8 @@ Default value is 2.}
 
 \item{observations}{A positive integer indicating the number of observations.}
 
-\item{probability}{A vector indicating the probability of each cluster.}
+\item{probability}{A vector indicating the probability of each cluster. The
+vector should sum to 1.}
 }
 \value{
 Returns an S3 object of class InfCriteria with results.
@@ -39,7 +40,7 @@ number of clusters, dimension of dataset, and number of observations,
 and the probability.
 }
 \examples{
-# Examples 1:
+# Example 1:
 # Using GeneCounts dataset available with package
 dim(GeneCounts)
 
@@ -52,7 +53,7 @@ InfCriteriaResults <- InfCriteriaCalculation(
                           probability = c(0.5, 0.5))
 InfCriteriaResults$BICresults
 
-# Examples 2:
+# Example 2:
 # Obtain an external sample RNAseq dataset
 \dontrun{
 library(MBCluster.Seq)
@@ -88,14 +89,14 @@ InfCriteriaResults <- InfCriteriaCalculation(
 InfCriteriaResults$BICresults
 
 
-# Examples 4:
+# Example 4:
 # Access raw data made available with this package
 inputCountsPath <- system.file("extdata", "GeneCounts.csv", package = "TestingPackage")
 # Read data
 inputCounts <- read.csv(file = inputCountsPath, header = TRUE)
 dim(inputCounts) # 30  4
 
-# To see documentation for data, made available seperately
+# To see documentation for data, made available separately
 ?GeneCounts
 
 # Calculate information criteria value
@@ -120,4 +121,12 @@ Analysis and Machine Intelligence} 22. \href{https://hal.inria.fr/inria-00073163
 
 Schwarz, G. (1978). Estimating the dimension of a model. \emph{The Annals of Statistics} 6, 461–464.
 \href{https://projecteuclid.org/euclid.aos/1176344136}{Link}.
+
+Yaqing, S. (2012). MBCluster.Seq: Model-Based Clustering for RNA-seq
+Data. R package version 1.0.
+\href{https://CRAN.R-project.org/package=MBCluster.Seq}{Link}.
+
+Kosinski, M. (2021). RTCGA.rnaseq: Rna-seq datasets from
+The Cancer Genome Atlas Project. R package version
+20151101.22.0. \href{https://bioconductor.org/packages/release/data/experiment/html/RTCGA.rnaseq.html}{Link}.
 }

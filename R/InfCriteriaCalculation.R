@@ -10,7 +10,8 @@
 #'    Default value is 2.
 #' @param dimensionality A positive integer indicating the dimensionality of dataset.
 #' @param observations A positive integer indicating the number of observations.
-#' @param probability A vector indicating the probability of each cluster.
+#' @param probability A vector indicating the probability of each cluster. The
+#'    vector should sum to 1.
 #'
 #' @return Returns an S3 object of class InfCriteria with results.
 #' \itemize{
@@ -20,7 +21,7 @@
 #' }
 #'
 #' @examples
-#' # Examples 1:
+#' # Example 1:
 #' # Using GeneCounts dataset available with package
 #' dim(GeneCounts)
 #'
@@ -33,7 +34,7 @@
 #'                           probability = c(0.5, 0.5))
 #' InfCriteriaResults$BICresults
 #'
-#' # Examples 2:
+#' # Example 2:
 #' # Obtain an external sample RNAseq dataset
 #' \dontrun{
 #' library(MBCluster.Seq)
@@ -69,14 +70,14 @@
 #' InfCriteriaResults$BICresults
 #'
 #'
-#' # Examples 4:
+#' # Example 4:
 #' # Access raw data made available with this package
 #' inputCountsPath <- system.file("extdata", "GeneCounts.csv", package = "TestingPackage")
 #' # Read data
 #' inputCounts <- read.csv(file = inputCountsPath, header = TRUE)
 #' dim(inputCounts) # 30  4
 #'
-#' # To see documentation for data, made available seperately
+#' # To see documentation for data, made available separately
 #' ?GeneCounts
 #'
 #' # Calculate information criteria value
@@ -100,6 +101,14 @@
 #'
 #'Schwarz, G. (1978). Estimating the dimension of a model. \emph{The Annals of Statistics} 6, 461–464.
 #'\href{https://projecteuclid.org/euclid.aos/1176344136}{Link}.
+#'
+#'Yaqing, S. (2012). MBCluster.Seq: Model-Based Clustering for RNA-seq
+#'Data. R package version 1.0.
+#'\href{https://CRAN.R-project.org/package=MBCluster.Seq}{Link}.
+#'
+#'Kosinski, M. (2021). RTCGA.rnaseq: Rna-seq datasets from
+#'The Cancer Genome Atlas Project. R package version
+#'20151101.22.0. \href{https://bioconductor.org/packages/release/data/experiment/html/RTCGA.rnaseq.html}{Link}.
 #'
 #' @export
 #' @import mclust
@@ -208,9 +217,9 @@ InfCriteriaCalculation <- function(loglikelihood,
 #' expression data. \emph{Bioinformatics}, 26, 139-140.
 #' \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/}{Link}
 #'
-#'  McCarthy, D. J., Chen, Y. and Smyth, G. K. (2012). Differential expression
-#'  analysis of multifactor RNA-Seq experiments with respect to biological
-#'  variation. \emph{Nucleic Acids Research}, 40, 4288-4297.
+#' McCarthy, D. J., Chen, Y. and Smyth, G. K. (2012). Differential expression
+#' analysis of multifactor RNA-Seq experiments with respect to biological
+#' variation. \emph{Nucleic Acids Research}, 40, 4288-4297.
 #' \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3378882/}{Link}
 #'
 #' @export
