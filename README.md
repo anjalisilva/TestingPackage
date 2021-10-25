@@ -4,7 +4,6 @@
 # TestingPackage
 
 <!-- badges: start -->
-
 <!-- badges: end -->
 
 ## Description
@@ -95,7 +94,7 @@ The package tree structure is provided below (optional).
   |- tests
     |- testthat.R
     |- testthat
-    |- test-InfCriteriaCalculation.R
+      |- test-InfCriteriaCalculation.R
 ```
 
 An overview of the package is illustrated below.
@@ -151,7 +150,7 @@ Massachusetts: O’Reilly Media. <https://r-pkgs.org/>
 ## Acknowledgements
 
 This package was developed for BCB410H: Applied Bioinformatics,
-University of Toronto, Toronto, CANADA, 2019-2020. `TestingPackage`
+University of Toronto, Toronto, CANADA, 2019-2021. `TestingPackage`
 welcomes issues, enhancement requests, and other contributions. To
 submit an issue, use the [GitHub
 issues](https://github.com/anjalisilva/TestingPackage/issues).
@@ -160,20 +159,20 @@ issues](https://github.com/anjalisilva/TestingPackage/issues).
 
 Packages developed by BCB410 students:
 
-  - [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)
+-   [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)
 
-  - [microCompet](https://github.com/MolyWang/microCompet)
+-   [microCompet](https://github.com/MolyWang/microCompet)
 
-  - [uniprotProteinView](https://github.com/zzaassaa2/uniprotProteinView)
+-   [uniprotProteinView](https://github.com/zzaassaa2/uniprotProteinView)
 
-  - [MethylExpress](https://github.com/diannamcallister/MethylExpress)
+-   [MethylExpress](https://github.com/diannamcallister/MethylExpress)
 
-  - [dynUGENE](https://github.com/tianyu-lu/dynUGENE)
+-   [dynUGENE](https://github.com/tianyu-lu/dynUGENE)
 
-  - [pdb3D](https://github.com/kevin949373048/pdb3D)
+-   [pdb3D](https://github.com/kevin949373048/pdb3D)
 
-  - [STRExpansionAnalyzer](https://github.com/michaelzwong/STRExpansionAnalyzer)
+-   [STRExpansionAnalyzer](https://github.com/michaelzwong/STRExpansionAnalyzer)
 
-  - [CellTyPETool](https://github.com/meconsens/CellTyPETool)
+-   [CellTyPETool](https://github.com/meconsens/CellTyPETool)
 
-  - [ChIPanalyzer](https://github.com/RyDe4/ChIPanalyzer)
+-   [ChIPanalyzer](https://github.com/RyDe4/ChIPanalyzer)
