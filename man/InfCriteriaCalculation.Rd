@@ -74,7 +74,7 @@ InfCriteriaResults$BICresults
 # Another way to obtain external data from another
 # package that is only used for the example:
 # More info, see: https://r-pkgs.org/r-cmd-check.html
-
+\dontrun{
 if (requireNamespace("RTCGA.rnaseq", quietly = TRUE)) {
 library(RTCGA.rnaseq)
 dim(ACC.rnaseq) # 79 20532
@@ -87,17 +87,16 @@ InfCriteriaResults <- InfCriteriaCalculation(
                           observations = ncol(ACC.rnaseq),
                           probability = c(0.5, 0.5))
 InfCriteriaResults$BICresults
-
+}
 
 # Example 4:
 # Access raw data made available with this package
-inputCountsPath <- system.file("extdata", "GeneCounts.csv", package = "TestingPackage")
+inputCountsPath <- system.file("extdata", "GeneCountsData2.csv", package = "TestingPackage")
 # Read data
-inputCounts <- read.csv(file = inputCountsPath, header = TRUE)
-dim(inputCounts) # 30  4
-
-# To see documentation for data, made available separately
-?GeneCounts
+GeneCounts2 <- read.csv(file = inputCountsPath, header = TRUE)
+dim(GeneCounts2) # 30  4
+# To see documentation for this dataset
+?GeneCounts2
 
 # Calculate information criteria value
 InfCriteriaResults <- InfCriteriaCalculation(
