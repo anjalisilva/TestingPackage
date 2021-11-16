@@ -1,7 +1,11 @@
-context("InfCriteria calculation")
+# context("InfCriteria calculation")
+# As of Nov 2021, removed context () as
+# ?testthat::context outlines that
+# use of context() is no longer recommended.
+
 library(TestingPackage)
-# An example of tests for one function. Tests should be
-# provided for all functions.
+# An example of tests for one function. Tests
+# should be provided for all functions.
 
 test_that("model fitting with three clusters", {
 
