@@ -73,10 +73,12 @@ The package tree structure is provided below (optional).
   |- README
   |- data
     |- GeneCounts.rda
+    |- GeneCounts2.rda
   |- inst
     CITATION
     |- extdata
       |- SILVA_A_A1.png
+      |- GeneCountsData2.csv
     |- shiny-scripts 
         |- app.R
   |- man
