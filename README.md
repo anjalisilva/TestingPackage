@@ -11,14 +11,20 @@
 A paragraph that describes the purpose of the package. Explain how your
 package add to or improve a current work flow in bioinformatics or
 computational biology (i.e., how is it unique?, what issue does it
-address?).
+address?).Finally, include the R version (not RStudio version) and
+platform (Mac, Windows, Linux (De- bian, Fedora/Redhat, Ubuntu)), used
+to develop the package. You may obtain this information by running
+`utils::sessionInfo()`.
 
 E.g., `TestingPackage` is an R package to demonstrate components of a
 simple R package. This includes the main components: DESCRIPTION,
 NAMESPACE, man subdirectory and R subdirectory. Additionally, licence,
 README and subdirectories vignettes, tests, data and inst are also
 explored. The package is targeted for BCB410H students exploring
-development of an R package in bioinformatics.
+development of an R package in bioinformatics. This package was
+developed using `R version 4.1.1 (2021-08-10)`,
+`Platform: x86_64-apple-darwin17.0 (64-bit)` and
+`Running under: macOS Big Sur 11.2`.
 
 ## Installation
 
@@ -159,7 +165,13 @@ issues](https://github.com/anjalisilva/TestingPackage/issues).
 
 ## Student Packages
 
-Packages developed by BCB410 students:
+Packages developed by BCB410 alumni:
+
+### 2021
+
+-   [scRGNet](https://github.com/ff98li/scRGNet)
+
+### 2020
 
 -   [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)
 
@@ -169,7 +181,8 @@ Packages developed by BCB410 students:
 
 -   [MethylExpress](https://github.com/diannamcallister/MethylExpress)
 
--   [dynUGENE](https://github.com/tianyu-lu/dynUGENE)
+-   [dynUGENE;](https://github.com/tianyu-lu/dynUGENE)
+    [manuscript](https://www.biorxiv.org/content/10.1101/2021.01.07.425782v1)
 
 -   [pdb3D](https://github.com/kevin949373048/pdb3D)
 
