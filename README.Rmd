@@ -112,7 +112,7 @@ Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture model for c
 
 BioRender. (2020). Image created by Silva, A. Retrieved October 30, 2020, from https://app.biorender.com/
 
-R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+R Core Team (2021). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
 
 Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464. https://projecteuclid.org/euclid.aos/1176344136.
 

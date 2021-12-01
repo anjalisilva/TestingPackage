@@ -144,7 +144,7 @@ model for clustering with the integrated classification likelihood.
 BioRender. (2020). Image created by Silva, A. Retrieved October 30,
 2020, from <https://app.biorender.com/>
 
-R Core Team (2020). R: A language and environment for statistical
+R Core Team (2021). R: A language and environment for statistical
 computing. R Foundation for Statistical Computing, Vienna, Austria.
 <https://www.R-project.org/>
 
