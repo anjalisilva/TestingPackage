@@ -165,11 +165,14 @@ issues](https://github.com/anjalisilva/TestingPackage/issues).
 
 ## Student Packages
 
-Packages developed by BCB410 alumni:
+Packages developed by BCB410 alumni. Many thanks to those who provided
+permission to share their packages!
 
 ### 2021
 
 -   [scRGNet](https://github.com/ff98li/scRGNet)
+
+-   [DEVisComp](https://github.com/Lori-tan/DEVisComp)
 
 ### 2020
 
