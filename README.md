@@ -174,6 +174,10 @@ permission to share their packages!
 
 -   [DEVisComp](https://github.com/Lori-tan/DEVisComp)
 
+-   [covid19Canada](https://github.com/RicoZong/covid19Canada)
+
+-   [IntegrationScore](https://github.com/eliaswilliams/IntegrationScore)
+
 ### 2020
 
 -   [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)

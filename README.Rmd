@@ -133,6 +133,10 @@ Packages developed by BCB410 alumni. Many thanks to those who provided permissio
 
 * [DEVisComp](https://github.com/Lori-tan/DEVisComp)
 
+* [covid19Canada](https://github.com/RicoZong/covid19Canada)
+
+* [IntegrationScore](https://github.com/eliaswilliams/IntegrationScore)
+
 ### 2020
 
 * [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)
