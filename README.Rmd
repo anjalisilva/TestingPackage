@@ -137,6 +137,12 @@ Packages developed by BCB410 alumni. Many thanks to those who provided permissio
 
 * [IntegrationScore](https://github.com/eliaswilliams/IntegrationScore)
 
+* [MyoManager](https://github.com/karenkuang37/MyoManager)
+
+* [snpCYP](https://github.com/a-albuquerque/snpCYP)
+
+* [VisualSARSDiff](https://github.com/aryanahmad/VisualSARSDiff)
+
 ### 2020
 
 * [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)

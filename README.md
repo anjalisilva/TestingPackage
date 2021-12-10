@@ -178,6 +178,12 @@ permission to share their packages!
 
 -   [IntegrationScore](https://github.com/eliaswilliams/IntegrationScore)
 
+-   [MyoManager](https://github.com/karenkuang37/MyoManager)
+
+-   [snpCYP](https://github.com/a-albuquerque/snpCYP)
+
+-   [VisualSARSDiff](https://github.com/aryanahmad/VisualSARSDiff)
+
 ### 2020
 
 -   [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)
