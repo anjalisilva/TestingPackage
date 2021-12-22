@@ -184,6 +184,10 @@ permission to share their packages!
 
 -   [VisualSARSDiff](https://github.com/aryanahmad/VisualSARSDiff)
 
+-   [clustREval](https://github.com/cindyfang70/clustREval)
+
+-   [ClustPhy](https://github.com/rainali475/ClustPhy)
+
 ### 2020
 
 -   [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)
