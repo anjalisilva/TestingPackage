@@ -14,10 +14,9 @@ ui <- fluidPage(
     # Sidebar panel for inputs ----
     sidebarPanel(
 
-      tags$p("This is a simple Shiny App that is part of the TestingPackage.
+      tags$p("This is a simple Shiny App that is part of the TestingPackage in R.
              Its purpose is to illustrate the functionality of a simple
              Shiny App."),
-
       # br() element to introduce extra vertical spacing ----
       br(),
 
@@ -36,20 +35,25 @@ ui <- fluidPage(
 
       # input
       tags$p("Instructions: Below, enter or select values required to perform the analysis. Default
-                        values are shown. Then press 'Run'. Navigate through
+             values are shown. Then press 'Run'. Navigate through
              the different tabs to the right to explore the results."),
 
       # br() element to introduce extra vertical spacing ----
       br(),
 
+      # input
+      uiOutput("tab"),
+      fileInput(inputId = "file1",
+                label = "Select an RNAseq count dataset to visualize. File should be in .csv format with rows corresponding to genes and columns to samples.",
+                accept = c(".csv")),
       textInput(inputId = "logL",
-                label = "Enter loglikelihood value. This should be a negative numeric value:", "-5080"),
+                label = "Enter loglikelihood value obatined for above dataset. This should be a negative numeric value:", "-5080"),
       textInput(inputId = "nClusters",
-                label = "Enter the number of Clusters. This should be an integer. This number and length(probability) below should match:", "2"),
+                label = "Enter the number of Clusters. This should be an integer. This number and length(probability) provided below should match:", "2"),
       textInput(inputId = "dimensionality",
-                label = "Enter the dimensionality of RNAseq dataset. This should be an integer:", "6"),
+                label = "Enter the dimensionality of RNAseq dataset. This should be an integer:", "3"),
       textInput(inputId = "observations",
-                label = "Enter the number of observations in RNAseq dataset. This should be an integer:", "100"),
+                label = "Enter the number of observations in RNAseq dataset. This should be an integer:", "30"),
       textInput(inputId = "probability",
                 label = "Enter probability of each Cluster. This should be a vector of numeric values. Note, the vector of values should sum to 1:", "0.5, 0.5"),
 
@@ -68,8 +72,13 @@ ui <- fluidPage(
 
       # Output: Tabset w/ plot, summary, and table ----
       tabsetPanel(type = "tabs",
+                  tabPanel("Plot of RNAseq Dataset",
+                           h3("Instructions: Enter values and click 'Run' at the bottom left side."),
+                           h3("Pairs Plot of Log-transformed RNAseq Count Dataset:"),
+                           br(),
+                           plotOutput("RNAseqPlot")),
                   tabPanel("Summary of Information Criteria Values",
-                           h3("Instructions: Enter values and click 'Run' at the bottom left."),
+                           h3("Instructions: Enter values and click 'Run' at the bottom left side."),
                            h3("Summary of Information Criteria Values:"),
                            br(),
                            h4("Bayesian information criterion (BIC)"),
@@ -79,7 +88,7 @@ ui <- fluidPage(
                            h4("Akaike Information Criterion (AIC)"),
                            verbatimTextOutput("textOutAIC")),
                   tabPanel("Plot of Information Criteria Values",
-                           h3("Instructions: Enter values and click 'Run' at the bottom left."),
+                           h3("Instructions: Enter values and click 'Run' at the bottom left side."),
                            h3("Plot of Information Criteria Values:"),
                            br(),
                            br(),
@@ -93,6 +102,14 @@ ui <- fluidPage(
 # Define server logic for random distribution app ----
 server <- function(input, output) {
 
+  # Save input csv as a reactive
+  matrixInput <- eventReactive(eventExpr = input$button2, {
+    if (! is.null(input$file1))
+      as.data.frame(read.csv(input$file1$datapath,
+                         sep = ",",
+                         header = TRUE,
+                         row.names = 1))
+  })
 
   # Calculate information criteria value
   startcalculation <- eventReactive(eventExpr = input$button2, {
@@ -107,29 +124,45 @@ server <- function(input, output) {
   })
 
 
-  # Textoutput
+  # Text output for BIC
   output$textOutBIC <- renderPrint({
     if (! is.null(startcalculation))
       startcalculation()$BICresults
   })
 
+  # Text output for ICL
   output$textOutICL <- renderPrint({
     if (! is.null(startcalculation))
       startcalculation()$ICLresults
   })
 
+  # Text output for AIC
   output$textOutAIC <- renderPrint({
     if (! is.null(startcalculation))
       startcalculation()$AICresults
   })
 
 
-  # Plotting
+  # Plotting Inf Criteria values
   output$OuputPlot <- renderPlot({
     if (! is.null(startcalculation))
       TestingPackage::InfCriteriaPlot(infValues =  startcalculation())
   })
 
+
+  # Plotting RNAseq dataset
+  output$RNAseqPlot <- renderPlot({
+    if (! is.null(startcalculation)) {
+      pairs(log(matrixInput() + 0.1))
+    }
+  })
+
+
+  # URL for downloading data
+  url <- a("Sample RNAseq count data", href="https://raw.githubusercontent.com/anjalisilva/TestingPackage/master/inst/extdata/GeneCountsData2.csv")
+  output$tab <- renderUI({
+    tagList("Download:", url)
+  })
 
 }
 
