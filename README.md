@@ -161,7 +161,8 @@ This package was developed for BCB410H: Applied Bioinformatics,
 University of Toronto, Toronto, CANADA, 2019-2021. `TestingPackage`
 welcomes issues, enhancement requests, and other contributions. To
 submit an issue, use the [GitHub
-issues](https://github.com/anjalisilva/TestingPackage/issues).
+issues](https://github.com/anjalisilva/TestingPackage/issues). Many
+thanks to those who provided feedback to improve this package.
 
 ## Student Packages
 
