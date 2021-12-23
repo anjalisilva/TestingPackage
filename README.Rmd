@@ -167,3 +167,8 @@ Packages developed by BCB410 alumni. Many thanks to those who provided permissio
 
 * [ChIPanalyzer](https://github.com/RyDe4/ChIPanalyzer)
 
+## Package Structure
+
+The package structure is illustrated below:
+
+![](./inst/extdata/SILVA_A_A2.png)

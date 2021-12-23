@@ -208,3 +208,9 @@ permission to share their packages!
 -   [CellTyPETool](https://github.com/meconsens/CellTyPETool)
 
 -   [ChIPanalyzer](https://github.com/RyDe4/ChIPanalyzer)
+
+## Package Structure
+
+The package structure is illustrated below:
+
+![](./inst/extdata/SILVA_A_A2.png)
