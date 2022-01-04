@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 An Example R Package For BCB410H: Applied Bioinformatics.
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/anjalisilva/TestPackage/workflows/R-CMD-check/badge.svg)](https://github.com/anjalisilva/TestPackage/actions)
 <!-- badges: end -->
 
 ## Description
