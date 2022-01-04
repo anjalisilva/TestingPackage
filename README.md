@@ -6,11 +6,12 @@
 An Example R Package For BCB410H: Applied Bioinformatics.
 
 <!-- badges: start -->
-
-[![CodeFactor](https://www.codefactor.io/repository/github/anjalisilva/testingpackage/badge)](https://www.codefactor.io/repository/github/anjalisilva/testingpackage)
 <!-- https://www.codefactor.io/repository/github/anjalisilva/testingpackage/issues -->
 
-<!-- badges: end -->
+[![CodeFactor](https://www.codefactor.io/repository/github/anjalisilva/testingpackage/badge)](https://www.codefactor.io/repository/github/anjalisilva/testingpackage)
+[![GitHub
+issues](https://img.shields.io/github/issues/anjalisilva/TestingPackage)](https://github.com/anjalisilva/TestingPackage/issues)
+<!-- https://shields.io/category/license --> <!-- badges: end -->
 
 ## Description
 
