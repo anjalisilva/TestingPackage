@@ -30,8 +30,8 @@ E.g., `TestingPackage` is an R package to demonstrate components of a simple R p
 Provide the following text and commands, customized to your R package. E.g., 
 <br>
 <br>
+<br>
 To install the latest version of the package:
-
 ``` r
 require("devtools")
 devtools::install_github("anjalisilva/TestingPackage", build_vignettes = TRUE)
@@ -47,6 +47,7 @@ runTestingPackage()
 Provide the following commands, customized to your R package. Then provide an overview to briefly describe the main components of the package. Include one image illustrating the overview of the package, that shows the inputs and outputs. Ensure the image is deposited in the correct location, as discussed in class. Point the user to vignettes for a tutorial of your package. E.g., 
 <br>
 <br>
+<br>
 ``` r
 ls("package:TestingPackage")
 data(package = "TestingPackage") 
@@ -56,10 +57,10 @@ browseVignettes("TestingPackage")
 
 ![](./inst/extdata/SILVA_A_A1.png)
 
-
 ## Contributions
 
 Provide a paragraph clearly indicating the name of the author of the package, contributions from the author and contributions from other packages/sources for each function. Remember your individual contributions to the package are important. E.g., 
+<br>
 <br>
 <br>
 The author of the package is Anjali Silva. The *InfCriteriaCalculation* function makes use of map function from `mclust` R package to generate information criteria values. The Integrated Complete Likelihood (ICL) values are calculated using a function written by the author. The `stats` R package is used for generating multinomially distributed random number vectors. Part of the code for *InfCriteriaCalculation* function has been taken from `<NamePackage>` R package. (Section of the borrowed code should be clearly indicated and referenced in the InfCriteriaCalculation R script). The *InfCriteriaPlot* function makes use of the `graphics` R package. *NormFactors* function uses Trimmed Mean of M-values (TMM) as implemented in `edgeR` R package.
@@ -68,6 +69,7 @@ The author of the package is Anjali Silva. The *InfCriteriaCalculation* function
 ## References
 
 Provide full references for all sources used, including for the packages mentioned under 'Contributions', in one specific format. E.g., 
+<br>
 <br>
 <br>
 Akaike, H. (1973). Information theory and an extension of the maximum likelihood principle. In *Second International Symposium on Information Theory*, New York, USA, 267–281. Springer Verlag. https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15.
@@ -93,12 +95,14 @@ Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachuse
 Provide the following text, customized to your package. E.g.,
 <br>
 <br>
+<br>
 This package was developed as part of an assessment for 2019-2022 BCB410H: Applied Bioinformatics course at the University of Toronto, Toronto, CANADA. `TestingPackage` welcomes issues, enhancement requests, and other contributions. To submit an issue, use the [GitHub issues](https://github.com/anjalisilva/TestingPackage/issues). Many thanks to those who provided feedback to improve this package.
 
 
 ## Student Packages 
 
 Packages developed by BCB410 alumni. Many thanks to those who provided permission to share their packages! 
+<br>
 <br>
 <br>
 ### 2021
@@ -146,6 +150,7 @@ Packages developed by BCB410 alumni. Many thanks to those who provided permissio
 The package structure is illustrated below:
 
 ![](./inst/extdata/SILVA_A_A2.png)
+<br>
 The package tree structure is provided below.
 
 ``` r
