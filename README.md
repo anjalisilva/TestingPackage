@@ -7,7 +7,9 @@ An Example R Package For BCB410H: Applied Bioinformatics.
 
 <!-- badges: start -->
 
-[![CodeFactor](https://www.codefactor.io/repository/github/anjalisilva/TestingPackage/badge)](https://www.codefactor.io/repository/github/anjalisilva/TestingPackage)
+[![CodeFactor](https://www.codefactor.io/repository/github/anjalisilva/testingpackage/badge)](https://www.codefactor.io/repository/github/anjalisilva/testingpackage)
+<!-- https://www.codefactor.io/repository/github/anjalisilva/testingpackage/issues -->
+
 <!-- badges: end -->
 
 ## Description
