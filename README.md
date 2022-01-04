@@ -15,19 +15,17 @@ address?). Finally, include the R version (not RStudio version) and
 platform (Mac, Windows, Linux (Debian, Fedora/Redhat, Ubuntu)), used to
 develop the package. There should be no `Shiny` implementation at this
 point. You may obtain this information by running
-`utils::sessionInfo()`.
-
-E.g., `TestingPackage` is an R package to demonstrate components of a
-simple R package. This includes the main components: DESCRIPTION,
-NAMESPACE, man subdirectory and R subdirectory. Additionally, LICENSE,
-README and subdirectories vignettes, tests, data and inst are also
-explored. The package is targeted for BCB410H (Applied Bioinformatics)
-students, who are to define a useful tool for the analysis of biological
-data in the format of a public R package housed on GitHub. The scope of
-the R package is to add to or improve a current work flow in
-bioinformatics or computational biology. The tool should contain
-functions to perform analysis of biological data and to produce a
-compelling graphical output, ideally to support for exploratory
+`utils::sessionInfo()`. <br> <br> E.g., `TestingPackage` is an R package
+to demonstrate components of a simple R package. This includes the main
+components: DESCRIPTION, NAMESPACE, man subdirectory and R subdirectory.
+Additionally, LICENSE, README and subdirectories vignettes, tests, data
+and inst are also explored. The package is targeted for BCB410H (Applied
+Bioinformatics) students, who are to define a useful tool for the
+analysis of biological data in the format of a public R package housed
+on GitHub. The scope of the R package is to add to or improve a current
+work flow in bioinformatics or computational biology. The tool should
+contain functions to perform analysis of biological data and to produce
+a compelling graphical output, ideally to support for exploratory
 analysis. The `TestingPackage` package was developed using
 `R version 4.1.1 (2021-08-10)`,
 `Platform: x86_64-apple-darwin17.0 (64-bit)` and
@@ -36,9 +34,7 @@ analysis. The `TestingPackage` package was developed using
 ## Installation
 
 Provide the following text and commands, customized to your R package.
-E.g.,
-
-To install the latest version of the package:
+E.g., <br> <br> To install the latest version of the package:
 
 ``` r
 require("devtools")
@@ -59,7 +55,7 @@ provide an overview to briefly describe the main components of the
 package. Include one image illustrating the overview of the package,
 that shows the inputs and outputs. Ensure the image is deposited in the
 correct location, as discussed in class. Point the user to vignettes for
-a tutorial of your package. E.g.,
+a tutorial of your package. E.g., <br> <br>
 
 ``` r
 ls("package:TestingPackage")
@@ -87,10 +83,9 @@ below.
 Provide a paragraph clearly indicating the name of the author of the
 package, contributions from the author and contributions from other
 packages/sources for each function. Remember your individual
-contributions to the package are important. E.g.,
-
-The author of the package is Anjali Silva. The *InfCriteriaCalculation*
-function makes use of map function from `mclust` R package to generate
+contributions to the package are important. E.g., <br> <br> The author
+of the package is Anjali Silva. The *InfCriteriaCalculation* function
+makes use of map function from `mclust` R package to generate
 information criteria values. The Integrated Complete Likelihood (ICL)
 values are calculated using a function written by the author. The
 `stats` R package is used for generating multinomially distributed
@@ -104,8 +99,7 @@ Mean of M-values (TMM) as implemented in `edgeR` R package.
 ## References
 
 Provide full references for all sources used, including for the packages
-mentioned under ‘Contributions’, in one specific format. E.g.,
-
+mentioned under ‘Contributions’, in one specific format. E.g., <br> <br>
 Akaike, H. (1973). Information theory and an extension of the maximum
 likelihood principle. In *Second International Symposium on Information
 Theory*, New York, USA, 267–281. Springer Verlag.
@@ -142,8 +136,7 @@ Massachusetts: O’Reilly Media. <https://r-pkgs.org/>
 
 ## Acknowledgements
 
-Provide the following text, customized to your package. E.g.,
-
+Provide the following text, customized to your package. E.g., <br> <br>
 This package was developed as part of an assessment for 2019-2022
 BCB410H: Applied Bioinformatics course at the University of Toronto,
 Toronto, CANADA. `TestingPackage` welcomes issues, enhancement requests,
@@ -154,9 +147,7 @@ thanks to those who provided feedback to improve this package.
 ## Student Packages
 
 Packages developed by BCB410 alumni. Many thanks to those who provided
-permission to share their packages!
-
-### 2021
+permission to share their packages! <br> <br> \#\#\# 2021
 
 -   [scRGNet](https://github.com/ff98li/scRGNet)
 
