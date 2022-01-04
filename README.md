@@ -149,7 +149,9 @@ thanks to those who provided feedback to improve this package.
 ## Student Packages
 
 Packages developed by BCB410 alumni. Many thanks to those who provided
-permission to share their packages! <br> <br> <br> \#\#\# 2021
+permission to share their packages! <br>
+
+### 2021
 
 -   [scRGNet](https://github.com/ff98li/scRGNet)
 
@@ -194,8 +196,8 @@ permission to share their packages! <br> <br> <br> \#\#\# 2021
 
 The package structure is illustrated below:
 
-![](./inst/extdata/SILVA_A_A2.png) <br> The package tree structure is
-provided below.
+![](./inst/extdata/SILVA_A_A2.png) <br> <br> The package tree structure
+is provided below.
 
 ``` r
 - TestingPackage
