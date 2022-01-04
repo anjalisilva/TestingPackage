@@ -8,25 +8,30 @@
 
 ## Description
 
-A paragraph that describes the purpose of the package. Explain how your
-package add to or improve a current work flow in bioinformatics or
+A paragraph that describes the purpose of your R package. Explain how
+your package add to or improve a current work flow in bioinformatics or
 computational biology (i.e., how is it unique?, what issue does it
-address?).Finally, include the R version (not RStudio version) and
+address?). Finally, include the R version (not RStudio version) and
 platform (Mac, Windows, Linux (Debian, Fedora/Redhat, Ubuntu)), used to
-develop the package. You may obtain this information by running
+develop the package. There should be no `Shiny` implementation at this
+point. You may obtain this information by running
 `utils::sessionInfo()`.
 
 E.g., `TestingPackage` is an R package to demonstrate components of a
 simple R package. This includes the main components: DESCRIPTION,
 NAMESPACE, man subdirectory and R subdirectory. Additionally, licence,
 README and subdirectories vignettes, tests, data and inst are also
-explored. The package is targeted for BCB410H students exploring
-development of an R package in bioinformatics. This package was
-developed using `R version 4.1.1 (2021-08-10)`,
+explored. The package is targeted for BCB410H students, who are to
+develop a bioinformatics tool to analyze biological data in the format
+of a public R package. This package was developed using
+`R version 4.1.1 (2021-08-10)`,
 `Platform: x86_64-apple-darwin17.0 (64-bit)` and
 `Running under: macOS Big Sur 11.2`.
 
 ## Installation
+
+Provide the following text and commands, customized to your R package by
+replacing text within &lt;…&gt;. E.g.,
 
 To install the latest version of the package:
 
@@ -44,96 +49,61 @@ runTestingPackage()
 
 ## Overview
 
+Provide the following commands, customized to your R package. Then
+provide an overview to briefly describe the main components of the
+package. Include one image illustrating the overview of the package,
+that shows the inputs and outputs. Ensure the image is deposited in the
+correct location, as discussed in class. Point the user to vignettes for
+a tutorial of your package. E.g.,
+
 ``` r
 ls("package:TestingPackage")
-data(package = "TestingPackage") # optional
+data(package = "TestingPackage") 
+browseVignettes("TestingPackage")
 ```
 
-After these commands, provide an overview that briefly describes the
-main components of the package. Point the user to vignettes for more
-details. Include an image illustrating the overview of the package.
-
-E.g., `TestingPackage` contains 4 functions to demonstrate components of
-a simple R package. The *InfCriteriaCalculation* function calculates the
+`TestingPackage` contains 4 functions to demonstrate components of a
+simple R package. The *InfCriteriaCalculation* function calculates the
 information criteria values. Specifically, Bayesian information
 criterion (BIC), Akaike information criterion (AIC) and Integrated
 Complete Likelihood (ICL) are calculated. The *InfCriteriaPlot*
 generates a plot of information criteria values. *NormFactors* is a
 function that calculates normalization factors via Trimmed Mean of
 M-values (TMM). The *runTestingPackage* is the function that launches
-the shiny app for this package. The package also contains RNA sequencing
-dataset GeneCounts. Refer to package vignettes for more details.
-
-``` r
-browseVignettes("TestingPackage")
-```
-
-The package tree structure is provided below (optional).
-
-``` r
-- TestingPackage
-  |- TestingPackage.Rproj
-  |- DESCRIPTION
-  |- NAMESPACE
-  |- LICENSE
-  |- README
-  |- data
-    |- GeneCounts.rda
-    |- GeneCounts2.rda
-  |- inst
-    CITATION
-    |- extdata
-      |- SILVA_A_A1.png
-      |- GeneCountsData2.csv
-    |- shiny-scripts 
-        |- app.R
-  |- man
-    |- GeneCounts.Rd
-    |- InfCriteriaCalculation.Rd
-    |- NormFactors.Rd
-    |- InfCriteriaPlot.Rd
-  |- R
-    |- data.R
-    |- InfCriteriaCalculation.R
-    |- InfCriteriaPlot.R
-    |- NormFactorCalculation.R
-  |- vignettes
-    |- TestingPackageVignette.Rmd
-  |- tests
-    |- testthat.R
-    |- testthat
-      |- test-InfCriteriaCalculation.R
-```
-
-An overview of the package is illustrated below.
+the shiny app for this package. The package also contains two RNA
+sequencing datasets, called GeneCounts and GeneCounts2. Refer to package
+vignettes for more details. An overview of the package is illustrated
+below.
 
 ![](./inst/extdata/SILVA_A_A1.png)
 
 ## Contributions
 
-Provide a note clearly indicating contributions from you and
-contributions from other packages/sources for each function. Remember
-your individual contributions to the package are important.
+Provide a paragraph clearly indicating the name of the author of the
+package, contributions from the author and contributions from other
+packages/sources for each function. Remember your individual
+contributions to the package are important. E.g.,
 
-E.g., The author of the package is Anjali Silva. The
-*InfCriteriaCalculation* function makes use of map function from
-`mclust` R package to generate ICL values. The `stats` R package is used
-for generating multinomially distributed random number vectors. (If
-applies: Part of the code for *InfCriteriaCalculation* function has been
-taken from `<NamePackage>` R package. Section of the borrowed code is
-clearly indicated and referenced in the InfCriteriaCalculation help
-file). The *InfCriteriaPlot* makes use of the `graphics` R package.
-*NormFactors* uses Trimmed Mean of M-values (TMM) as implemented in
-`edgeR` R package.
+The author of the package is Anjali Silva. The *InfCriteriaCalculation*
+function makes use of map function from `mclust` R package to generate
+information criteria values. The Integrated Complete Likelihood (ICL)
+values are calculated using a function written by the author. The
+`stats` R package is used for generating multinomially distributed
+random number vectors. Part of the code for *InfCriteriaCalculation*
+function has been taken from `<NamePackage>` R package. (Section of the
+borrowed code should be clearly indicated and referenced in the
+InfCriteriaCalculation R script). The *InfCriteriaPlot* function makes
+use of the `graphics` R package. *NormFactors* function uses Trimmed
+Mean of M-values (TMM) as implemented in `edgeR` R package.
 
 ## References
 
-Provide full references for all sources used in one specific format.
-E.g.,
+Provide full references for all sources used, including for the packages
+mentioned under ‘Contributions’, in one specific format. E.g.,
 
 Akaike, H. (1973). Information theory and an extension of the maximum
 likelihood principle. In *Second International Symposium on Information
-Theory*, New York, NY, USA, pp. 267–281. Springer Verlag.
+Theory*, New York, USA, 267–281. Springer Verlag.
 <https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15>.
 
 Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture
@@ -144,6 +114,11 @@ model for clustering with the integrated classification likelihood.
 BioRender. (2020). Image created by Silva, A. Retrieved October 30,
 2020, from <https://app.biorender.com/>
 
+McCarthy, D. J., Chen Y. and Smyth, G. K. (2012). Differential
+expression analysis of multifactor RNA-Seq experiments with respect to
+biological variation. *Nucleic Acids Research* 40. 4288-4297.
+<https://pubmed.ncbi.nlm.nih.gov/22287627/>
+
 R Core Team (2021). R: A language and environment for statistical
 computing. R Foundation for Statistical Computing, Vienna, Austria.
 <https://www.R-project.org/>
@@ -152,15 +127,22 @@ Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of
 Statistics* 6, 461–464.
 <https://projecteuclid.org/euclid.aos/1176344136>.
 
+Scrucca, L., Fop, M., Murphy, T. B. and Raftery, A. E. (2016) mclust 5:
+clustering, classification and density estimation using Gaussian finite
+mixture models. *The R Journal* 8(1), 289-317.
+<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5096736/>
+
 Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton,
 Massachusetts: O’Reilly Media. <https://r-pkgs.org/>
 
 ## Acknowledgements
 
-This package was developed for BCB410H: Applied Bioinformatics,
-University of Toronto, Toronto, CANADA, 2019-2021. `TestingPackage`
-welcomes issues, enhancement requests, and other contributions. To
-submit an issue, use the [GitHub
+Provide the following text, customized to your package. E.g.,
+
+This package was developed as part of an assessment for 2019-2022
+BCB410H: Applied Bioinformatics course at the University of Toronto,
+Toronto, CANADA. `TestingPackage` welcomes issues, enhancement requests,
+and other contributions. To submit an issue, use the [GitHub
 issues](https://github.com/anjalisilva/TestingPackage/issues). Many
 thanks to those who provided feedback to improve this package.
 
@@ -214,4 +196,40 @@ permission to share their packages!
 
 The package structure is illustrated below:
 
-![](./inst/extdata/SILVA_A_A2.png)
+![](./inst/extdata/SILVA_A_A2.png) The package tree structure is
+provided below.
+
+``` r
+- TestingPackage
+  |- TestingPackage.Rproj
+  |- DESCRIPTION
+  |- NAMESPACE
+  |- LICENSE
+  |- README
+  |- data
+    |- GeneCounts.rda
+    |- GeneCounts2.rda
+  |- inst
+    CITATION
+    |- extdata
+      |- SILVA_A_A1.png
+      |- GeneCountsData2.csv
+    |- shiny-scripts 
+        |- app.R
+  |- man
+    |- GeneCounts.Rd
+    |- InfCriteriaCalculation.Rd
+    |- NormFactors.Rd
+    |- InfCriteriaPlot.Rd
+  |- R
+    |- data.R
+    |- InfCriteriaCalculation.R
+    |- InfCriteriaPlot.R
+    |- NormFactorCalculation.R
+  |- vignettes
+    |- TestingPackageVignette.Rmd
+  |- tests
+    |- testthat.R
+    |- testthat
+      |- test-InfCriteriaCalculation.R
+```
