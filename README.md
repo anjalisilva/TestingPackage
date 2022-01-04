@@ -3,7 +3,7 @@
 
 # TestingPackage
 
-An Example R Package For BCB410H.
+An Example R Package For BCB410H: Applied Bioinformatics.
 
 <!-- badges: start -->
 <!-- badges: end -->
