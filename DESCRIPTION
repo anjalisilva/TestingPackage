@@ -1,6 +1,6 @@
 Package: TestingPackage
 Type: Package
-Title: Example R Package For BCB410H: Applied Bioinformatics
+Title: An Example R Package For BCB410H: Applied Bioinformatics
 Version: 0.1.0
 Authors@R: person("A", "Silva", email = "anjali.silva@uhnresearch.ca", role = c("aut", "cre"))
 Maintainer: Anjali Silva <anjali.silva@uhnresearch.ca>

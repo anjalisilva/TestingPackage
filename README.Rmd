@@ -72,7 +72,7 @@ The author of the package is Anjali Silva. The *InfCriteriaCalculation* function
 
 ## References
 
-Provide full references for all sources used, including for the packages mentioned under 'Contributions', in one specific format. E.g., 
+Provide full references for all sources used, including for the packages mentioned under 'Contributions', in one format. E.g., 
 <br>
 <br>
 <br>
@@ -97,7 +97,7 @@ Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachuse
 
 ## Acknowledgements
 
-Provide the following text, customized to your package. E.g.,
+Provide the following text, customized to your R package. E.g.,
 <br>
 <br>
 <br>

@@ -101,10 +101,10 @@ Mean of M-values (TMM) as implemented in `edgeR` R package.
 ## References
 
 Provide full references for all sources used, including for the packages
-mentioned under ‘Contributions’, in one specific format. E.g., <br> <br>
-<br> Akaike, H. (1973). Information theory and an extension of the
-maximum likelihood principle. In *Second International Symposium on
-Information Theory*, New York, USA, 267–281. Springer Verlag.
+mentioned under ‘Contributions’, in one format. E.g., <br> <br> <br>
+Akaike, H. (1973). Information theory and an extension of the maximum
+likelihood principle. In *Second International Symposium on Information
+Theory*, New York, USA, 267–281. Springer Verlag.
 <https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15>.
 
 Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture
@@ -138,11 +138,11 @@ Massachusetts: O’Reilly Media. <https://r-pkgs.org/>
 
 ## Acknowledgements
 
-Provide the following text, customized to your package. E.g., <br> <br>
-<br> This package was developed as part of an assessment for 2019-2022
-BCB410H: Applied Bioinformatics course at the University of Toronto,
-Toronto, CANADA. `TestingPackage` welcomes issues, enhancement requests,
-and other contributions. To submit an issue, use the [GitHub
+Provide the following text, customized to your R package. E.g., <br>
+<br> <br> This package was developed as part of an assessment for
+2019-2022 BCB410H: Applied Bioinformatics course at the University of
+Toronto, Toronto, CANADA. `TestingPackage` welcomes issues, enhancement
+requests, and other contributions. To submit an issue, use the [GitHub
 issues](https://github.com/anjalisilva/TestingPackage/issues). Many
 thanks to those who provided feedback to improve this package.
 
