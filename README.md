@@ -3,6 +3,8 @@
 
 # TestingPackage
 
+An Example R Package For BCB410H.
+
 <!-- badges: start -->
 <!-- badges: end -->
 
@@ -15,7 +17,7 @@ address?). Finally, include the R version (not RStudio version) and
 platform (Mac, Windows, Linux (Debian, Fedora/Redhat, Ubuntu)), used to
 develop the package. There should be no `Shiny` implementation at this
 point. You may obtain this information by running
-`utils::sessionInfo()`. <br> <br> <br> E.g., `TestingPackage` is an R
+`utils::sessionInfo()`. E.g., <br> <br> <br> `TestingPackage` is an R
 package to demonstrate components of a simple R package. This includes
 the main components: DESCRIPTION, NAMESPACE, man subdirectory and R
 subdirectory. Additionally, LICENSE, README and subdirectories
