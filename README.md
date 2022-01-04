@@ -19,19 +19,24 @@ point. You may obtain this information by running
 
 E.g., `TestingPackage` is an R package to demonstrate components of a
 simple R package. This includes the main components: DESCRIPTION,
-NAMESPACE, man subdirectory and R subdirectory. Additionally, licence,
+NAMESPACE, man subdirectory and R subdirectory. Additionally, LICENSE,
 README and subdirectories vignettes, tests, data and inst are also
-explored. The package is targeted for BCB410H students, who are to
-develop a bioinformatics tool to analyze biological data in the format
-of a public R package. This package was developed using
+explored. The package is targeted for BCB410H (Applied Bioinformatics)
+students, who are to define a useful tool for the analysis of biological
+data in the format of a public R package housed on GitHub. The scope of
+the R package is to add to or improve a current work flow in
+bioinformatics or computational biology. The tool should contain
+functions to perform analysis of biological data and to produce a
+compelling graphical output, ideally to support for exploratory
+analysis. The `TestingPackage` package was developed using
 `R version 4.1.1 (2021-08-10)`,
 `Platform: x86_64-apple-darwin17.0 (64-bit)` and
 `Running under: macOS Big Sur 11.2`.
 
 ## Installation
 
-Provide the following text and commands, customized to your R package by
-replacing text within &lt;…&gt;. E.g.,
+Provide the following text and commands, customized to your R package.
+E.g.,
 
 To install the latest version of the package:
 
