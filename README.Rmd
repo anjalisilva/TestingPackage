@@ -17,7 +17,8 @@ An Example R Package For BCB410H: Applied Bioinformatics.
 
 <!-- badges: start -->
 <!-- https://www.codefactor.io/repository/github/anjalisilva/testingpackage/issues -->
-[![CodeFactor](https://www.codefactor.io/repository/github/anjalisilva/testingpackage/badge)](https://www.codefactor.io/repository/github/anjalisilva/testingpackage) [![GitHub issues](https://img.shields.io/github/issues/anjalisilva/TestingPackage)](https://github.com/anjalisilva/TestingPackage/issues)
+[![CodeFactor](https://www.codefactor.io/repository/github/anjalisilva/testingpackage/badge)](https://www.codefactor.io/repository/github/anjalisilva/testingpackage) [![GitHub issues](https://img.shields.io/github/issues/anjalisilva/TestingPackage)](https://github.com/anjalisilva/TestingPackage/issues) ![GitHub branch checks state](https://img.shields.io/github/checks-status/anjalisilva/TestingPackage/master) [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE) ![GitHub language count](https://img.shields.io/github/languages/count/anjalisilva/TestingPackage) ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/y/anjalisilva/TestingPackage/master)
+
 <!-- https://shields.io/category/license -->
 <!-- badges: end -->
 
