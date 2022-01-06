@@ -21,6 +21,7 @@
 runTestingPackage <- function() {
   appDir <- system.file("shiny-scripts",
     package = "TestingPackage")
-  return(shiny::runApp(appDir, display.mode = "normal"))
+  actionShiny <- shiny::runApp(appDir, display.mode = "normal")
+  return(actionShiny)
 }
 # [END]
