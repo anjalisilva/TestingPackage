@@ -41,7 +41,7 @@ ui <- fluidPage(
       br(),
 
       # input
-      useShinyalert(),  # Set up shinyalert
+      shinyalert::useShinyalert(),  # Set up shinyalert
       uiOutput("tab2"),
       actionButton(inputId = "data1",
                    label = "Dataset 1 Details"),
