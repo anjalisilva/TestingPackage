@@ -20,7 +20,7 @@ University of Guelph, Canada.
 GeneCounts2
 }
 \description{
-An RNAseq experiment conductd using bean plants from 2016 in Canada.
+An RNAseq experiment conducted using bean plants from 2016 in Canada.
 }
 \examples{
 \dontrun{

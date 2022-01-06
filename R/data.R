@@ -19,7 +19,7 @@
 
 #' Gene Counts Dataset From An RNAseq Experiment 2
 #'
-#' An RNAseq experiment conductd using bean plants from 2016 in Canada.
+#' An RNAseq experiment conducted using bean plants from 2016 in Canada.
 #'
 #' @source University of Guelph, Canada.
 #'

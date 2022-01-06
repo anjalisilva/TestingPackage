@@ -41,20 +41,31 @@ ui <- fluidPage(
       br(),
 
       # input
-      uiOutput("tab"),
+      useShinyalert(),  # Set up shinyalert
+      uiOutput("tab2"),
+      actionButton(inputId = "data1",
+                   label = "Dataset 1 Details"),
+      uiOutput("tab1"),
+      actionButton(inputId = "data2",
+                   label = "Dataset 2 Details"),
       fileInput(inputId = "file1",
                 label = "Select an RNAseq count dataset to visualize. File should be in .csv format with rows corresponding to genes and columns to samples.",
                 accept = c(".csv")),
       textInput(inputId = "logL",
-                label = "Enter loglikelihood value obatined for above dataset. This should be a negative numeric value:", "-5080"),
+                label = "Enter loglikelihood value obatined for above dataset.
+                This should be a negative numeric value:", "-5080"),
       textInput(inputId = "nClusters",
-                label = "Enter the number of Clusters. This should be an integer. This number and length(probability) provided below should match:", "2"),
+                label = "Enter the number of Clusters. This should be a positive integer.
+                This number and length(probability) provided below should match:", "2"),
       textInput(inputId = "dimensionality",
-                label = "Enter the dimensionality of RNAseq dataset. This should be an integer:", "3"),
+                label = "Enter the dimensionality/number of columns of the RNAseq dataset.
+                This should be a positive integer:", "3"),
       textInput(inputId = "observations",
-                label = "Enter the number of observations in RNAseq dataset. This should be an integer:", "30"),
+                label = "Enter the number of observations (n) of the RNAseq dataset.
+                This should be a positive integer:", "1000"),
       textInput(inputId = "probability",
-                label = "Enter probability of each Cluster. This should be a vector of numeric values. Note, the vector of values should sum to 1:", "0.5, 0.5"),
+                label = "Enter probability of each Cluster.
+                This should be a vector of numeric values. Note, the vector of values should sum to 1:", "0.5, 0.5"),
 
 
       # br() element to introduce extra vertical spacing ----
@@ -157,11 +168,36 @@ server <- function(input, output) {
   })
 
 
-  # URL for downloading data
-  url <- a("Sample RNAseq count data", href="https://raw.githubusercontent.com/anjalisilva/TestingPackage/master/inst/extdata/GeneCountsData2.csv")
-  output$tab <- renderUI({
-    tagList("Download:", url)
+  # URLs for downloading data
+  url1 <- a("Example Dataset 2", href="https://raw.githubusercontent.com/anjalisilva/TestingPackage/master/inst/extdata/GeneCountsData2.csv")
+  output$tab1 <- renderUI({
+    tagList("Download:", url1)
   })
+
+  observeEvent(input$data2, {
+    # Show a modal when the button is pressed
+    shinyalert(title = "Example Dataset 2",
+               text = "An RNAseq experiment conductd using bean plants from 2016 in Canada. This dataset has n = 30 genes along rows and d = 3 conditions or samples along columns. Data was generated at the University of Guelph, Canada in 2016. To save the file (from Chrome), click on link, then right click, select 'Save As...' and then save as a .csv file.
+               Citation: Silva, A. (2020) TestingPackage: An Example R Package For BCB410H. Unpublished. URL https://github.com/anjalisilva/TestingPackage",
+               type = "info")
+  })
+
+  url2 <- a("Example Dataset 1", href="https://drive.google.com/file/d/1jMBTPpsBwaigjR3mO49AMYDxzjVnNiAv/view?usp=sharing")
+  output$tab2 <- renderUI({
+    tagList("Download:", url2)
+  })
+
+  observeEvent(input$data1, {
+    # Show a modal when the button is pressed
+    shinyalert(title = "Example Dataset 1",
+               text = "This is a simulated dataset generated from mixtures of multivariate Poisson log-normal
+               distributions with G = 2 components. It has a size of n = 1000 observations along rows and d = 6
+               samples along columns. Data was generated January, 2022. To save the file, click on link, then click 'Download' from the top right side.
+               Citation: Silva, A., S. J. Rothstein, P. D. McNicholas, and S. Subedi (2019). A multivariate Poisson-log normal
+               mixture model for clustering transcriptome sequencing data. BMC Bioinformatics. 2019;20(1):394. URL https://pubmed.ncbi.nlm.nih.gov/31311497/",
+               type = "info")
+  })
+
 
 }
 
