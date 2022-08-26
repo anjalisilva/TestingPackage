@@ -7,7 +7,8 @@ Authors@R: person("Anjali", "Silva",
                   role = c("aut", "cre"),
                   comment = c(ORCID = "0000-0001-9292-1920"))
 Maintainer: Anjali Silva <a.silva@utoronto.ca>
-Description: An example package to illustrate components of an R package.
+Description: Illustrate required and optional components of an 
+    R package as per guidelines of BCB410H: Applied Bioinformatics.
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.1.0)
