@@ -2,7 +2,10 @@ Package: TestingPackage
 Type: Package
 Title: An Example R Package For BCB410H: Applied Bioinformatics
 Version: 0.1.0
-Authors@R: person("A", "Silva", email = "a.silva@utoronto.ca", role = c("aut", "cre"))
+Authors@R: person("Anjali", "Silva", 
+                  email = "a.silva@utoronto.ca", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0001-9292-1920"))
 Maintainer: Anjali Silva <a.silva@utoronto.ca>
 Description: An example package to illustrate components of an R package.
 Encoding: UTF-8
