@@ -121,7 +121,25 @@ class(InfCriteriaResults)
 names(InfCriteriaResults)
 ``` 
 
-Here, InfCriteriaResults is an S3 object of class InfCriteria, which is a list containing results 'BICresults', 'AICresults' and 'ICLresults'.
+Here, InfCriteriaResults is an S3 object of class InfCriteria, which is a list containing results 'BICresults', 'AICresults' and 'ICLresults'. Let's take a look at each information criterion output, starting with 'BICresults'.
+
+```{r, }
+# To get details of BICresults
+InfCriteriaResults$BICresults
+
+# To get details of BICresults
+InfCriteriaResults$AICresults
+
+# To get details of BICresults
+InfCriteriaResults$ICLresults
+
+``` 
+
+Here the BIC and ICL values are 10194.01, and the AICresults value is 10180. To visualize the results, you may use *InfCriteriaPlot* function. 
+
+InfCriteriaPlot(infValues = InfCriteriaResults)
+
+
 
 ## Package References
 
