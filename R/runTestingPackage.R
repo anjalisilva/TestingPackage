@@ -17,10 +17,8 @@
 #'
 #' @export
 #' @importFrom shiny runApp
-#' @importFrom shinyalert shinyalert
 
 runTestingPackage <- function() {
-  shinyalert::useShinyalert()
   appDir <- system.file("shiny-scripts",
     package = "TestingPackage")
   actionShiny <- shiny::runApp(appDir, display.mode = "normal")

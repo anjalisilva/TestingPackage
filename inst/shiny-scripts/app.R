@@ -2,7 +2,6 @@
 # Grolemund, G. (2015). Learn Shiny - Video Tutorials. URL:https://shiny.rstudio.com/tutorial/
 
 library(shiny)
-library(shinyalert)
 
 # Define UI
 ui <- fluidPage(

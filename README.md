@@ -113,40 +113,41 @@ Mean of M-values (TMM) as implemented in `edgeR` R package.
 ## References
 
 Provide full references for all sources used, including for the packages
-mentioned under ‘Contributions’, in one format. E.g., <br> <br> <br>
-Akaike, H. (1973). Information theory and an extension of the maximum
-likelihood principle. In *Second International Symposium on Information
-Theory*, New York, USA, 267–281. Springer Verlag.
-<https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15>.
+mentioned under ‘Contributions’, in one format. E.g., <br> <br>
 
-Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture
-model for clustering with the integrated classification likelihood.
-*IEEE Transactions on Pattern Analysis and Machine Intelligence* 22.
-<https://hal.inria.fr/inria-00073163/document>
+- Akaike, H. (1973). Information theory and an extension of the maximum
+  likelihood principle. In *Second International Symposium on
+  Information Theory*, New York, USA, 267–281. Springer Verlag.
+  <https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15>.
 
-BioRender. (2020). Image created by Silva, A. Retrieved October 30,
-2020, from <https://app.biorender.com/>
+- Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture
+  model for clustering with the integrated classification likelihood.
+  *IEEE Transactions on Pattern Analysis and Machine Intelligence* 22.
+  <https://hal.inria.fr/inria-00073163/document>
 
-McCarthy, D. J., Chen Y. and Smyth, G. K. (2012). Differential
-expression analysis of multifactor RNA-Seq experiments with respect to
-biological variation. *Nucleic Acids Research* 40. 4288-4297.
-<https://pubmed.ncbi.nlm.nih.gov/22287627/>
+- BioRender. (2020). Image created by Silva, A. Retrieved October 30,
+  2020, from <https://app.biorender.com/>
 
-R Core Team (2021). R: A language and environment for statistical
-computing. R Foundation for Statistical Computing, Vienna, Austria.
-<https://www.R-project.org/>
+- McCarthy, D. J., Chen Y. and Smyth, G. K. (2012). Differential
+  expression analysis of multifactor RNA-Seq experiments with respect to
+  biological variation. *Nucleic Acids Research* 40. 4288-4297.
+  <https://pubmed.ncbi.nlm.nih.gov/22287627/>
 
-Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of
-Statistics* 6, 461–464.
-<https://projecteuclid.org/euclid.aos/1176344136>.
+- R Core Team (2022). R: A language and environment for statistical
+  computing. R Foundation for Statistical Computing, Vienna, Austria.
+  <https://www.R-project.org/>
 
-Scrucca, L., Fop, M., Murphy, T. B. and Raftery, A. E. (2016) mclust 5:
-clustering, classification and density estimation using Gaussian finite
-mixture models. *The R Journal* 8(1), 289-317.
-<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5096736/>
+- Schwarz, G. (1978). Estimating the dimension of a model. *The Annals
+  of Statistics* 6, 461–464.
+  <https://projecteuclid.org/euclid.aos/1176344136>.
 
-Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton,
-Massachusetts: O’Reilly Media. <https://r-pkgs.org/>
+- Scrucca, L., Fop, M., Murphy, T. B. and Raftery, A. E. (2016) mclust
+  5: clustering, classification and density estimation using Gaussian
+  finite mixture models. *The R Journal* 8(1), 289-317.
+  <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5096736/>
+
+- Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton,
+  Massachusetts: O’Reilly Media. <https://r-pkgs.org/>
 
 ## Acknowledgements
 
@@ -163,46 +164,48 @@ thanks to those who provided feedback to improve this package.
 Packages developed by BCB410 alumni. Many thanks to those who provided
 permission to share their packages! <br>
 
+### 2022
+
 ### 2021
 
--   [scRGNet](https://github.com/ff98li/scRGNet)
+- [scRGNet](https://github.com/ff98li/scRGNet)
 
--   [DEVisComp](https://github.com/Lori-tan/DEVisComp)
+- [DEVisComp](https://github.com/Lori-tan/DEVisComp)
 
--   [covid19Canada](https://github.com/RicoZong/covid19Canada)
+- [covid19Canada](https://github.com/RicoZong/covid19Canada)
 
--   [IntegrationScore](https://github.com/eliaswilliams/IntegrationScore)
+- [IntegrationScore](https://github.com/eliaswilliams/IntegrationScore)
 
--   [MyoManager](https://github.com/karenkuang37/MyoManager)
+- [MyoManager](https://github.com/karenkuang37/MyoManager)
 
--   [snpCYP](https://github.com/a-albuquerque/snpCYP)
+- [snpCYP](https://github.com/a-albuquerque/snpCYP)
 
--   [VisualSARSDiff](https://github.com/aryanahmad/VisualSARSDiff)
+- [VisualSARSDiff](https://github.com/aryanahmad/VisualSARSDiff)
 
--   [clustREval](https://github.com/cindyfang70/clustREval)
+- [clustREval](https://github.com/cindyfang70/clustREval)
 
--   [ClustPhy](https://github.com/rainali475/ClustPhy)
+- [ClustPhy](https://github.com/rainali475/ClustPhy)
 
 ### 2020
 
--   [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)
+- [gscVisualizer](https://github.com/Deemolotus/gscVisualizer)
 
--   [microCompet](https://github.com/MolyWang/microCompet)
+- [microCompet](https://github.com/MolyWang/microCompet)
 
--   [uniprotProteinView](https://github.com/zzaassaa2/uniprotProteinView)
+- [uniprotProteinView](https://github.com/zzaassaa2/uniprotProteinView)
 
--   [MethylExpress](https://github.com/diannamcallister/MethylExpress)
+- [MethylExpress](https://github.com/diannamcallister/MethylExpress)
 
--   [dynUGENE;](https://github.com/tianyu-lu/dynUGENE)
-    [manuscript](https://www.biorxiv.org/content/10.1101/2021.01.07.425782v1)
+- [dynUGENE;](https://github.com/tianyu-lu/dynUGENE)
+  [manuscript](https://www.biorxiv.org/content/10.1101/2021.01.07.425782v1)
 
--   [pdb3D](https://github.com/kevin949373048/pdb3D)
+- [pdb3D](https://github.com/kevin949373048/pdb3D)
 
--   [STRExpansionAnalyzer](https://github.com/michaelzwong/STRExpansionAnalyzer)
+- [STRExpansionAnalyzer](https://github.com/michaelzwong/STRExpansionAnalyzer)
 
--   [CellTyPETool](https://github.com/meconsens/CellTyPETool)
+- [CellTyPETool](https://github.com/meconsens/CellTyPETool)
 
--   [ChIPanalyzer](https://github.com/RyDe4/ChIPanalyzer)
+- [ChIPanalyzer](https://github.com/RyDe4/ChIPanalyzer)
 
 ## Package Structure
 
