@@ -36,7 +36,7 @@ To download **TestingPackage**, use the following commands:
 
 ``` r
 require("devtools")
-install_github("anjalisilva/TestingPackage", build_vignettes = TRUE)
+devtools::install_github("anjalisilva/TestingPackage", build_vignettes = TRUE)
 library("TestingPackage")
 ```
 To list all sample functions available in the package:
@@ -79,7 +79,7 @@ The minimal requirements of an R package is described, followed by other compone
 
 * The **tests** subdirectory includes the testthat subdirectory, which has test that are written to see if functions are working as expected. There should be unit tests and integration tests. 
 
-* The **vignettes** subdirectory permit to include vignettes that provide an overview of the R package.
+* The **vignettes** subdirectory permit to include vignettes for the R package. A vignette is a long-form tutorial to the package, which shows the applications of functions using a sample dataset. Explain the functions to the user, the purpose, show the output to the user and explain how to interpret the output to the user. Visuals should be included, if the application of the function is to generate a visual. You may include multiple vignettes for the package, but at least one vignette should be a long form tutorial showing applicability of all the functions in the package. Vignettes must end with *sessionInfo()*; attend lecture to understand why this is. 
 
 * The **inst** subdirectory contains other files and subdirectories. **CITATION** file should be included here. Other subdirectories may include extdata and shiny-scripts. The **extdata** subdirectory can include images included in README file. The **shiny-scripts** subdirectory should include shiny script files (app.R). 
 
@@ -89,18 +89,64 @@ The minimal requirements of an R package is described, followed by other compone
 
 <div style="text-align:left">
 
+<br>
+
+## Applications
+To get more information about *InfCriteriaCalculation* function:
+```{r, }
+library(TestingPackage)
+?InfCriteriaCalculation
+``` 
+
+Here the function *InfCriteriaCalculation* is a function that calculates information criteria including Bayesian information criterion (BIC; Schwarz, 1978), Akaike information criterion (AIC; Akaike, 1973) and Integrated Complete Likelihood (ICL; Biernacki et al., 2000). To calculate these, the function should be provided with log-likelihood, the number of clusters, dimension of dataset, and the number of observations, and the probability.
+
+As an example, let's use the *GeneCounts* dataset which has 30 observations and a dimensionality of 3, showing raw counts from an RNA sequencing dataset. Here, assume the log-likelihood is -5080, number of clusters being considered is 2, and the probability of the 2 clusters are 0.5 and 0.5. The output is saved into the R object *InfCriteriaResults*.
+
+
+```{r, }
+InfCriteriaResults <- TestingPackage::InfCriteriaCalculation(
+                          loglikelihood = -5080,
+                          nClusters = 2,
+                          dimensionality = ncol(GeneCounts),
+                          observations = nrow(GeneCounts),
+                          probability = c(0.5, 0.5))
+``` 
+
+To access results, see:
+```{r, }
+# To get the class of InfCriteriaResults
+class(InfCriteriaResults)
+
+# To get names of InfCriteriaResults
+names(InfCriteriaResults)
+``` 
+
+Here, InfCriteriaResults is an S3 object of class InfCriteria, which is a list containing results 'BICresults', 'AICresults' and 'ICLresults'.
+
 ## Package References
 
-[Silva, A. (2020) TestingPackage: An Example R Package For
+[Silva, A. (2022) TestingPackage: An Example R Package For
   BCB410H. Unpublished.](https://github.com/anjalisilva/TestingPackage)
 
 <br>
 
 ## Other References
 
-R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+Akaike, H. (1973). Information theory and an extension of the maximum likelihood principle. In *Second International Symposium on Information Theory*, New York, USA, 267–281. Springer Verlag. https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15.
+
+Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture model for clustering with the integrated classification likelihood. *IEEE Transactions on Pattern Analysis and Machine Intelligence* 22. https://hal.inria.fr/inria-00073163/document
 
 BioRender. (2020). Image created by Silva, A. Retrieved October 30, 2020, from https://app.biorender.com/
+
+McCarthy, D. J., Chen Y. and Smyth, G. K. (2012). Differential expression analysis of multifactor RNA-Seq experiments with respect to biological variation. *Nucleic Acids Research* 40. 4288-4297.
+https://pubmed.ncbi.nlm.nih.gov/22287627/
+
+R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+
+Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464. https://projecteuclid.org/euclid.aos/1176344136.
+
+Scrucca, L., Fop, M., Murphy, T. B. and Raftery, A. E. (2016) mclust 5: clustering, classification and density estimation using Gaussian finite mixture models. *The R Journal* 8(1), 289-317. 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5096736/ 
 
 Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachusetts: O'Reilly Media. https://r-pkgs.org/
 
