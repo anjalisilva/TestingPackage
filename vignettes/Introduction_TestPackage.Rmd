@@ -92,10 +92,10 @@ The minimal requirements of an R package is described, followed by other compone
 <br>
 
 ## Applications
-To get more information about *InfCriteriaCalculation* function:
+To get more information about *InfCriteriaCalculation* function, the help documentation will helpful too:
 ```{r, }
 library(TestingPackage)
-?InfCriteriaCalculation
+?TestingPackage::InfCriteriaCalculation
 ``` 
 
 Here the function *InfCriteriaCalculation* is a function that calculates information criteria including Bayesian information criterion (BIC; Schwarz, 1978), Akaike information criterion (AIC; Akaike, 1973) and Integrated Complete Likelihood (ICL; Biernacki et al., 2000). To calculate these, the function should be provided with log-likelihood, the number of clusters, dimension of dataset, and the number of observations, and the probability.
@@ -135,38 +135,46 @@ InfCriteriaResults$ICLresults
 
 ``` 
 
-Here the BIC and ICL values are 10194.01, and the AICresults value is 10180. To visualize the results, you may use *InfCriteriaPlot* function. 
+Here the BIC and ICL values are 10194.01, and the AICresults value is 10180. To visualize the results, you may use *InfCriteriaPlot* function. To read more about *InfCriteriaPlot* function, see:
 
-InfCriteriaPlot(infValues = InfCriteriaResults)
+```{r, }
+library(TestingPackage)
+?TestingPackage::InfCriteriaPlot
+``` 
 
+Let's create the plot of information criteria versus information criteria value. 
+```{r, }
+TestingPackage::InfCriteriaPlot(infValues = InfCriteriaResults)
+``` 
 
+The plot shows the information criterion on the x-axis and the information criteria value on the y-axis. Here, the values of BIC and ICL values are higher than that of AIC. 
 
 ## Package References
 
-[Silva, A. (2022) TestingPackage: An Example R Package For
-  BCB410H. Unpublished.](https://github.com/anjalisilva/TestingPackage)
+- Silva, A. (2022) TestingPackage: An Example R Package For
+  BCB410H. Unpublished. https://github.com/anjalisilva/TestingPackage
 
 <br>
 
 ## Other References
 
-Akaike, H. (1973). Information theory and an extension of the maximum likelihood principle. In *Second International Symposium on Information Theory*, New York, USA, 267–281. Springer Verlag. https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15.
+- Akaike, H. (1973). Information theory and an extension of the maximum likelihood principle. In *Second International Symposium on Information Theory*, New York, USA, 267–281. Springer Verlag. https://link.springer.com/chapter/10.1007/978-1-4612-1694-0_15.
 
-Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture model for clustering with the integrated classification likelihood. *IEEE Transactions on Pattern Analysis and Machine Intelligence* 22. https://hal.inria.fr/inria-00073163/document
+- Biernacki, C., G. Celeux, and G. Govaert (2000). Assessing a mixture model for clustering with the integrated classification likelihood. *IEEE Transactions on Pattern Analysis and Machine Intelligence* 22. https://hal.inria.fr/inria-00073163/document
 
-BioRender. (2020). Image created by Silva, A. Retrieved October 30, 2020, from https://app.biorender.com/
+- BioRender. (2020). Image created by Silva, A. Retrieved October 30, 2020, from https://app.biorender.com/
 
-McCarthy, D. J., Chen Y. and Smyth, G. K. (2012). Differential expression analysis of multifactor RNA-Seq experiments with respect to biological variation. *Nucleic Acids Research* 40. 4288-4297.
+- McCarthy, D. J., Chen Y. and Smyth, G. K. (2012). Differential expression analysis of multifactor RNA-Seq experiments with respect to biological variation. *Nucleic Acids Research* 40. 4288-4297.
 https://pubmed.ncbi.nlm.nih.gov/22287627/
 
-R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+- R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
 
-Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464. https://projecteuclid.org/euclid.aos/1176344136.
+- Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464. https://projecteuclid.org/euclid.aos/1176344136.
 
-Scrucca, L., Fop, M., Murphy, T. B. and Raftery, A. E. (2016) mclust 5: clustering, classification and density estimation using Gaussian finite mixture models. *The R Journal* 8(1), 289-317. 
+- Scrucca, L., Fop, M., Murphy, T. B. and Raftery, A. E. (2016) mclust 5: clustering, classification and density estimation using Gaussian finite mixture models. *The R Journal* 8(1), 289-317. 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5096736/ 
 
-Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachusetts: O'Reilly Media. https://r-pkgs.org/
+- Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachusetts: O'Reilly Media. https://r-pkgs.org/
 
 ----
 
