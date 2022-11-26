@@ -13,8 +13,7 @@ InfCriteriaCalculation(
 )
 }
 \arguments{
-\item{loglikelihood}{A negative value of class "numeric" indicating
-the log-likelihood.}
+\item{loglikelihood}{A negative double indicating the log-likelihood.}
 
 \item{nClusters}{A positive integer indicating the number of clusters.
 Default value is 2.}

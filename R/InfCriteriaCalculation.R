@@ -4,8 +4,7 @@
 #' number of clusters, dimension of dataset, and number of observations,
 #' and the probability.
 #'
-#' @param loglikelihood A negative value of class "numeric" indicating
-#'    the log-likelihood.
+#' @param loglikelihood A negative double indicating the log-likelihood.
 #' @param nClusters A positive integer indicating the number of clusters.
 #'    Default value is 2.
 #' @param dimensionality A positive integer indicating the dimensionality of dataset.
