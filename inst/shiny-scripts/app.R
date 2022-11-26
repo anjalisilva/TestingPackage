@@ -204,6 +204,6 @@ server <- function(input, output) {
 }
 
 # Create Shiny app ----
-shinyApp(ui, server)
+shiny::shinyApp(ui, server)
 
 # [END]
