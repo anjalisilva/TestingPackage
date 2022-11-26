@@ -7,17 +7,20 @@
 InfCriteriaPlot(infValues)
 }
 \arguments{
-\item{infValues}{A list of negative values of class "InfCriteria" indicating
-the log-likelihood corresponding to BIC, AIC and ICL, respectively.}
+\item{infValues}{A list of positive (double or integer) values
+of class "InfCriteria" indicating corresponding to BIC,
+AIC and ICL, respectively.}
 }
 \value{
-Returns a plot of information criteria values.
+Returns a scatter plot showing information criteria values
+versus the criterion.
 }
 \description{
 A function that plots information criteria values
 }
 \examples{
-InfCriteriaResults <- InfCriteriaCalculation(loglikelihood = -5080,
+InfCriteriaResults <- TestingPackage::InfCriteriaCalculation(
+                                             loglikelihood = -5080,
                                              nClusters = 2,
                                              dimensionality = 3,
                                              observations = 1000,
