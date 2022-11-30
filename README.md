@@ -159,12 +159,14 @@ requests, and other contributions. To submit an issue, use the [GitHub
 issues](https://github.com/anjalisilva/TestingPackage/issues). Many
 thanks to those who provided feedback to improve this package.
 
-## Student Packages
+## Alumni Packages
 
 Packages developed by BCB410 alumni. Many thanks to those who provided
 permission to share their packages! <br>
 
 ### 2022
+
+- [EVEP](https://github.com/SZFukunaga/EVEP)
 
 ### 2021
 
