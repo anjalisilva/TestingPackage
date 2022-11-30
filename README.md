@@ -168,6 +168,8 @@ permission to share their packages! <br>
 
 - [EVEP](https://github.com/SZFukunaga/EVEP)
 
+- [AbunRNA](https://github.com/zhangchengyue/AbunRNA)
+
 ### 2021
 
 - [scRGNet](https://github.com/ff98li/scRGNet)
