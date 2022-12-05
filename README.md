@@ -170,6 +170,8 @@ permission to share their packages! <br>
 
 - [AbunRNA](https://github.com/zhangchengyue/AbunRNA)
 
+- [DeregGenes](https://github.com/wezhubb/DeregGenes)
+
 ### 2021
 
 - [scRGNet](https://github.com/ff98li/scRGNet)
