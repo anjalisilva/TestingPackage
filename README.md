@@ -172,6 +172,12 @@ permission to share their packages! <br>
 
 - [DeregGenes](https://github.com/wezhubb/DeregGenes)
 
+- [CNVds](https://github.com/jenydu/CNVds)
+
+- [oncoAnalysis](https://github.com/xuxiny17/oncoAnalysis)
+
+- [sexDisaggregate](https://github.com/lifangy6/sexDisaggregate)
+
 ### 2021
 
 - [scRGNet](https://github.com/ff98li/scRGNet)
