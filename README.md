@@ -27,9 +27,8 @@ your package add to or improve a current work flow in bioinformatics or
 computational biology (i.e., how is it unique?, what issue does it
 address?). Finally, include the R version (not RStudio version) and
 platform (Mac, Windows, Linux (Debian, Fedora/Redhat, Ubuntu)), used to
-develop the package. There should be no `Shiny` implementation at this
-point. You may obtain this information by running
-`utils::sessionInfo()`. E.g., <br> <br> <br> `TestingPackage` is an R
+develop the package. You may obtain this information by running
+`utils::sessionInfo()`. There should be no `Shiny` implementation for initial submission.  E.g., <br> <br> <br> `TestingPackage` is an R
 package to demonstrate components of a simple R package. This includes
 the main components: DESCRIPTION, NAMESPACE, man subdirectory and R
 subdirectory. Additionally, LICENSE, README and subdirectories
