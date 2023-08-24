@@ -22,7 +22,7 @@
 #' @examples
 #' # Example 1:
 #' # Using GeneCounts dataset available with package
-#' dim(GeneCounts)
+#' dim(GeneCounts) # a n = 30 by d = 3 dataset
 #'
 #' # Calculate information criteria value
 #' InfCriteriaResults <- InfCriteriaCalculation(
@@ -199,15 +199,24 @@ InfCriteriaCalculation <- function(loglikelihood,
 #'
 #' A function that calculate normalization factors via trimmed mean of
 #' M-values (TMM) given an RNA sequencing dataset containing raw counts.
+#' The factors are generated for the number of variables or dimensions
+#' present in the dataset.
 #'
 #' @param dataset A matrix of integers, with n observations along rows
 #'   and d dimensions for columns. Typically, d < n.
 #'
-#' @return Returns an object, normFactors, with normalization factors.
+#' @return Returns an object, normFactors, with d length vector of
+#'   normalization factors.
 #'
 #' @examples
-#' dim(GeneCounts)
-#' normGeneCounts <- NormFactors(dataset = as.matrix(GeneCounts))
+#' # Example 1:
+#' # Using GeneCounts dataset available with package
+#' dim(GeneCounts) # a dataset of n = 30 by d = 3
+#' head(GeneCounts) # see first few entries of dataset
+#' # Generate normalization factors
+#' normGeneCounts <- TestingPackage::NormFactors(
+#'                           dataset = as.matrix(GeneCounts))
+#' normGeneCounts # print the 3 normalization factors
 #'
 #' @references
 #' Robinson, M. D., McCarthy, D. J. and Smyth, G. K. (2010). edgeR: a
