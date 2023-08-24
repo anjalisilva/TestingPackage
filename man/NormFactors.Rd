@@ -11,15 +11,24 @@ NormFactors(dataset)
 and d dimensions for columns. Typically, d < n.}
 }
 \value{
-Returns an object, normFactors, with normalization factors.
+Returns an object, normFactors, with d length vector of
+normalization factors.
 }
 \description{
 A function that calculate normalization factors via trimmed mean of
 M-values (TMM) given an RNA sequencing dataset containing raw counts.
+The factors are generated for the number of variables or dimensions
+present in the dataset.
 }
 \examples{
-dim(GeneCounts)
-normGeneCounts <- NormFactors(dataset = as.matrix(GeneCounts))
+# Example 1:
+# Using GeneCounts dataset available with package
+dim(GeneCounts) # a dataset of n = 30 by d = 3
+head(GeneCounts) # see first few entries of dataset
+# Generate normalization factors
+normGeneCounts <- TestingPackage::NormFactors(
+                          dataset = as.matrix(GeneCounts))
+normGeneCounts # print the 3 normalization factors
 
 }
 \references{

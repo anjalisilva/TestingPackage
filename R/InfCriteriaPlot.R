@@ -1,10 +1,16 @@
 #' Plot Information Criteria Values
 #'
-#' A function that plots information criteria values
+#' A function that plots information criteria values as a scatter plot.
+#' Here, information criterion AIC, BIC and ICL are provided along x-axis
+#' and information criterion value along the y-axis.
 #'
 #' @param infValues A list of positive (double or integer) values
 #'    of class "InfCriteria" indicating corresponding to BIC,
 #'    AIC and ICL, respectively.
+#'
+#' @param plotTitle A character vector specifying a custom name
+#'    for the plot to be created. Default is "Plot of information
+#'     criteria values".
 #'
 #' @return Returns a scatter plot showing information criteria values
 #'    versus the criterion.
@@ -20,7 +26,7 @@
 #'
 #' @export
 #' @importFrom ggplot2 ggplot
-InfCriteriaPlot <- function(infValues) {
+InfCriteriaPlot <- function(infValues, plotTitle = NA) {
 
   data <- NULL
 
@@ -28,11 +34,16 @@ InfCriteriaPlot <- function(infValues) {
   DataToPlot <- data.frame(data = unlist(infValues),
                             names = c("BIC", "AIC", "ICL"))
 
+  # check if user provided title present, if not assign
+  if(is.na(plotTitle)) {
+    plotTitle <- "Plot of information criteria values"
+  }
+
   # plotting the information criteria values
   plotAxis <- ggplot2::ggplot(data = DataToPlot,
                              ggplot2::aes(x = names, y = data)) +
                              ggplot2::geom_point() +
-                             ggplot2::labs(title = "Plot of information criteria values",
+                             ggplot2::labs(title = plotTitle,
                              x = "Criterion", y = "Value") +
                              ggplot2::theme(panel.grid.major =  ggplot2::element_blank(),
                              panel.grid.minor =  ggplot2::element_blank(),

@@ -46,8 +46,8 @@ library("TestingPackage")
 ```
 To run the Shiny app:
 ``` r
-runTestingPackage() # not for assessment 4; only for Assessment 5
-```
+runTestingPackage() # not for Assessment 4; only for Assessment 5
+``` 
 
 
 ## Overview
@@ -61,15 +61,15 @@ ls("package:TestingPackage")
 data(package = "TestingPackage") 
 browseVignettes("TestingPackage")
 ```
-`TestingPackage` contains 4 functions.
+`TestingPackage` contains 3 functions.
 
-1.  ***mplnVariational*** for carrying out clustering of count data
-    using mixtures of MPLN via variational expectation-maximization
-2.  ***mplnMCMCParallel*** for carrying out clustering of count data
-    using mixtures of MPLN via a Markov chain Monte Carlo
+1.  ***InfCriteriaCalculation*** for calculating information criteria given dataset dimensions, log-likelihood and probability.
 
+2.  ***NormFactors*** for calculating normalization factors via via trimmed mean of M-values (TMM). 
 
-to demonstrate components of a simple R package. The *InfCriteriaCalculation* function calculates the information criteria values. Specifically, Bayesian information criterion (BIC), Akaike information criterion (AIC) and Integrated Complete Likelihood (ICL) are calculated. The *InfCriteriaPlot* generates a plot of information criteria values. *NormFactors* is a function that calculates normalization factors via Trimmed Mean of M-values (TMM). The *runTestingPackage* is the function that launches the shiny app for this package. The package also contains two RNA sequencing datasets, called GeneCounts and GeneCounts2. Refer to package vignettes for more details. An overview of the package is illustrated below. 
+3.  ***InfCriteriaPlot*** for plotting information criteria values as a scatter plot. 
+
+The package also contains two RNA sequencing datasets, called GeneCounts and GeneCounts2. Refer to package vignettes for more details. An overview of the package is illustrated below. 
 
 ![](./inst/extdata/SILVA_A_A1.png)
 
@@ -80,13 +80,8 @@ Provide a paragraph clearly indicating the name of the author of the package and
 <br>
 <br>
 <br>
-The author of the package is Anjali Silva. The Integrated Complete Likelihood (ICL) values are calculated using a function written by the author.
 
-
-
-The *InfCriteriaCalculation* function makes use of map function from `mclust` R package to generate information criteria values. The Integrated Complete Likelihood (ICL) values are calculated using a function written by the author. The `stats` R package is used for generating multinomially distributed random number vectors. Part of the code for *InfCriteriaCalculation* function has been taken from `<NamePackage>` R package. (Section of the borrowed code should be clearly indicated and referenced in the InfCriteriaCalculation R script). The *InfCriteriaPlot* function makes use of the `graphics` R package. *NormFactors* function uses Trimmed Mean of M-values (TMM) as implemented in `edgeR` R package.
-
-No generative AI tools were used in the development of this package. 
+The author of the package is Anjali Silva. The author wrote the *InfCriteriaCalculation* function, which calculates the information criteria values given data specifications. Here, the Bayesian information criterion (BIC), Akaike information criterion (AIC) and Integrated Complete Likelihood (ICL) are calculated. The *InfCriteriaCalculation* function makes use of map function from `mclust` R package to generate information criteria values. The `stats` R package is used for generating multinomially distributed random number vectors. Part of the code for *InfCriteriaCalculation* function has been taken from `<NamePackage>` R package. (Section of the borrowed code should be clearly indicated and referenced in the InfCriteriaCalculation R script). The *InfCriteriaPlot* is written by the author and generates a plot of information criteria values. The *InfCriteriaPlot* function makes use of the `graphics` R package. *NormFactors* is a function that calculates normalization factors via Trimmed Mean of M-values (TMM). *NormFactors* function uses Trimmed Mean of M-values (TMM) as implemented in `edgeR` R package. No generative AI tools were used in the development of this package. 
 
 ## References
 
@@ -103,7 +98,7 @@ Provide full references for all sources used, including for the packages and too
 - McCarthy, D. J., Chen Y. and Smyth, G. K. (2012). Differential expression analysis of multifactor RNA-Seq experiments with respect to biological variation. *Nucleic Acids Research* 40. 4288-4297.
 https://pubmed.ncbi.nlm.nih.gov/22287627/
 
-- R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+- R Core Team (2023). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
 
 - Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464. https://projecteuclid.org/euclid.aos/1176344136.
 
@@ -129,6 +124,15 @@ Packages developed by BCB410 alumni. Many thanks to those who provided permissio
 
 ### 2022
 
+* [AbunRNA](https://github.com/zhangchengyue/AbunRNA)
+
+* [DeregGenes](https://github.com/wezhubb/DeregGenes)
+
+* [CNVds](https://github.com/jenydu/CNVds)
+
+* [oncoAnalysis](https://github.com/xuxiny17/oncoAnalysis)
+
+* [sexDisaggregate](https://github.com/lifangy6/sexDisaggregate)
 
 ### 2021
 

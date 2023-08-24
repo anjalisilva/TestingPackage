@@ -41,7 +41,7 @@ and the probability.
 \examples{
 # Example 1:
 # Using GeneCounts dataset available with package
-dim(GeneCounts)
+dim(GeneCounts) # a n = 30 by d = 3 dataset
 
 # Calculate information criteria value
 InfCriteriaResults <- InfCriteriaCalculation(

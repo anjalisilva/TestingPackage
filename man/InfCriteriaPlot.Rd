@@ -4,19 +4,25 @@
 \alias{InfCriteriaPlot}
 \title{Plot Information Criteria Values}
 \usage{
-InfCriteriaPlot(infValues)
+InfCriteriaPlot(infValues, plotTitle = NA)
 }
 \arguments{
 \item{infValues}{A list of positive (double or integer) values
 of class "InfCriteria" indicating corresponding to BIC,
 AIC and ICL, respectively.}
+
+\item{plotTitle}{A character vector specifying a custom name
+for the plot to be created. Default is "Plot of information
+criteria values".}
 }
 \value{
 Returns a scatter plot showing information criteria values
 versus the criterion.
 }
 \description{
-A function that plots information criteria values
+A function that plots information criteria values as a scatter plot.
+Here, information criterion AIC, BIC and ICL are provided along x-axis
+and information criterion value along the y-axis.
 }
 \examples{
 InfCriteriaResults <- TestingPackage::InfCriteriaCalculation(
