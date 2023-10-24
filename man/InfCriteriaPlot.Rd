@@ -2,7 +2,7 @@
 % Please edit documentation in R/InfCriteriaPlot.R
 \name{InfCriteriaPlot}
 \alias{InfCriteriaPlot}
-\title{Plot Information Criteria Values}
+\title{Scatter Plot Of Information Criteria Values}
 \usage{
 InfCriteriaPlot(infValues, plotTitle = NA)
 }

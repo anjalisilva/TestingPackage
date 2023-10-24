@@ -2,14 +2,14 @@
 % Please edit documentation in R/InfCriteriaCalculation.R
 \name{InfCriteriaCalculation}
 \alias{InfCriteriaCalculation}
-\title{Calculates Information Criteria}
+\title{Calculates Information Criteria Values}
 \usage{
 InfCriteriaCalculation(
-  loglikelihood,
+  loglikelihood = -5000,
   nClusters = 2,
-  dimensionality,
-  observations,
-  probability
+  dimensionality = 6,
+  observations = 1000,
+  probability = c(0.6, 0.4)
 )
 }
 \arguments{
@@ -34,9 +34,9 @@ Returns an S3 object of class InfCriteria with results.
 }
 }
 \description{
-A function that calculates information criteria given log-likelihood,
-number of clusters, dimension of dataset, and number of observations,
-and the probability.
+A function that calculates information criteria values (BIC, ICL, AIC)
+given log-likelihood, number of clusters, dimension of dataset, and
+number of observations, and the probability.
 }
 \examples{
 # Example 1:

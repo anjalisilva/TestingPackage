@@ -1,4 +1,4 @@
-#' Plot Information Criteria Values
+#' Scatter Plot Of Information Criteria Values
 #'
 #' A function that plots information criteria values as a scatter plot.
 #' Here, information criterion AIC, BIC and ICL are provided along x-axis

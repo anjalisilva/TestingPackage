@@ -1,8 +1,8 @@
-#' Calculates Information Criteria
+#' Calculates Information Criteria Values
 #'
-#' A function that calculates information criteria given log-likelihood,
-#' number of clusters, dimension of dataset, and number of observations,
-#' and the probability.
+#' A function that calculates information criteria values (BIC, ICL, AIC)
+#' given log-likelihood, number of clusters, dimension of dataset, and
+#' number of observations, and the probability.
 #'
 #' @param loglikelihood A negative double indicating the log-likelihood.
 #' @param nClusters A positive integer indicating the number of clusters.
@@ -111,54 +111,61 @@
 #' @export
 #' @import mclust
 #' @import stats
-InfCriteriaCalculation <- function(loglikelihood,
+InfCriteriaCalculation <- function(loglikelihood = -5000,
                                    nClusters = 2,
-                                   dimensionality,
-                                   observations,
-                                   probability) {
+                                   dimensionality = 6,
+                                   observations = 1000,
+                                   probability = c(0.6, 0.4)) {
 
   # Performing checks of user input
   if (typeof(loglikelihood) != "double" & class(loglikelihood) != "numeric") {
-    stop("Loglikelihood should be a negative value of class numeric indicating
-         the log-likelihood.")
+    stop("Loglikelihood argument should be provided a negative value of
+          class numeric indicating the log-likelihood.")
   }
 
   if(loglikelihood > 0) {
-    stop("Loglikelihood should be a negative value.")
+    stop("Loglikelihood argument should be provided a negative value.")
   }
 
   if(is.numeric(nClusters) == FALSE) {
-    stop("nClusters should be a positive integer indicating the number of clusters.")
+    stop("nClusters argument should be provided a positive integer
+          indicating the number of clusters.")
   }
 
 
   if(nClusters <= 0) {
-    stop("nClusters should be a positive integer indicating the number of clusters.")
+    stop("nClusters argument should be provided a positive integer
+          indicating the number of clusters.")
   }
 
   # An alternative to correct user input
   if(nClusters < 0) {
-    warning("nClusters should be a positive integer indicating the number of clusters.
-            Input value corrected to be positive.", call. = FALSE)
+    warning("nClusters argument should be provided a positive integer indicating the
+             number of clusters. Input value corrected to be positive.",
+             call. = FALSE)
     nClusters <- abs(nClusters) # correct the input for user
   }
 
 
   if(is.numeric(dimensionality) == FALSE) {
-    stop("dimensionality should be a positive integer indicating the positive integer
-         indicating the dimensionality of dataset.")
+    stop("dimensionality argument should be provided a positive integer
+          indicating the positive integer indicating the dimensionality
+          of dataset.")
   }
 
   if(is.numeric(observations) == FALSE) {
-    stop("observations positive integer indicating the number of observations.")
+    stop("observations argument should be provided a positive integer
+          indicating the number of observations.")
   }
 
   if(is.numeric(probability) == FALSE) {
-    stop("probability should be a numeric vector indicating the probability of each cluster.")
+    stop("probability argument should be provided a should be a numeric
+          vector indicating the probability of each cluster.")
   }
 
   if(sum(probability) != 1) {
-    stop("Input values for probability should sum to 1.")
+    stop("Input values for probability argument should be a vector that
+          sum to 1.")
   }
 
 
