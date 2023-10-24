@@ -8,8 +8,8 @@ InfCriteriaPlot(infValues, plotTitle = NA)
 }
 \arguments{
 \item{infValues}{A list of positive (double or integer) values
-of class "InfCriteria" indicating corresponding to BIC,
-AIC and ICL, respectively.}
+of class "InfCriteria" indicating information criteria values
+corresponding to BIC, AIC and ICL, respectively.}
 
 \item{plotTitle}{A character vector specifying a custom name
 for the plot to be created. Default is "Plot of information

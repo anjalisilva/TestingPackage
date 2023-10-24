@@ -5,8 +5,8 @@
 #' and information criterion value along the y-axis.
 #'
 #' @param infValues A list of positive (double or integer) values
-#'    of class "InfCriteria" indicating corresponding to BIC,
-#'    AIC and ICL, respectively.
+#'    of class "InfCriteria" indicating information criteria values
+#'    corresponding to BIC, AIC and ICL, respectively.
 #'
 #' @param plotTitle A character vector specifying a custom name
 #'    for the plot to be created. Default is "Plot of information
@@ -26,7 +26,15 @@
 #'
 #' @export
 #' @importFrom ggplot2 ggplot
-InfCriteriaPlot <- function(infValues, plotTitle = NA) {
+InfCriteriaPlot <- function(infValues,
+                            plotTitle = NA) {
+
+  # Performing checks of user input
+  if (class(unlist(infValues)) != "numeric") {
+    stop("infValues argument should be provided a list of
+         numeric values corresponding to BIC, AIC and ICL,
+         respectively.")
+  }
 
   data <- NULL
 
