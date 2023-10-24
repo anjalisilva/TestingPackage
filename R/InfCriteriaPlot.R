@@ -26,7 +26,7 @@
 #'
 #' @export
 #' @importFrom ggplot2 ggplot
-InfCriteriaPlot <- function(infValues,
+InfCriteriaPlot <- function(infValues = list(10229.08, 10180, 10229.08),
                             plotTitle = NA) {
 
   # Performing checks of user input

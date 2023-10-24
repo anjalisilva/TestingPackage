@@ -4,7 +4,7 @@
 \alias{InfCriteriaPlot}
 \title{Scatter Plot Of Information Criteria Values}
 \usage{
-InfCriteriaPlot(infValues, plotTitle = NA)
+InfCriteriaPlot(infValues = list(10229.08, 10180, 10229.08), plotTitle = NA)
 }
 \arguments{
 \item{infValues}{A list of positive (double or integer) values
