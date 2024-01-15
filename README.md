@@ -180,6 +180,46 @@ thanks to those who provided feedback to improve this package.
 Packages developed by BCB410 alumni. Many thanks to those who provided
 permission to share their packages! <br>
 
+### 2023
+
+- [AtlaZ](https://github.com/ashenafee/AtlaZ)
+
+- [ClinicalTranscriptLink](https://github.com/michellemlin/ClinicalTranscriptLink)
+
+- [CompHeatmaps](https://github.com/kojiwong/CompHeatmaps)
+
+- [CovidWasteWatch](https://github.com/viv-wang/CovidWasteWatch)
+
+- [DrugSeekR](https://github.com/this-wei/DrugSeekR)
+
+- [GEAnaly](https://github.com/ReaganGen/GEAnaly)
+
+- [IntegraTRN](https://github.com/j-y26/IntegraTRN)
+
+- [IsoformVisRNA](https://github.com/hyunnaye/IsoformVisRNA)
+
+- [MicrobiomeExplorer](https://github.com/itsSabbir/MicrobiomeExplorer)
+
+- [MissensePathoR](https://github.com/Lola-W/MissensePathoR)
+
+- [OpenViRome](https://github.com/HiAidenG/OpenViRome)
+
+- [OsteoAnalizer](https://github.com/ika-joshi/OsteoAnalizer)
+
+- [PDBCleanup](https://github.com/isaiahah/PDBCleanup)
+
+- [PhenoGenRLib](https://github.com/RealYHD/PhenoGenRLib)
+
+- [PROstat5](https://github.com/kannai99/PROstat5)
+
+- [psychCNVassoc](https://github.com/angelauzelac10/psychCNVassoc)
+
+- [SeuratToGO](https://github.com/dien-n-nguyen/SeuratToGO)
+
+- [TMscoreAlign](https://github.com/kevqyzhu/TMscoreAlign)
+
+- [TRNValStandVis](https://github.com/Mogtaba-Alim/TRNValStandVis)
+
 ### 2022
 
 - [AbunRNA](https://github.com/zhangchengyue/AbunRNA)
