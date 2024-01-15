@@ -144,7 +144,12 @@ and tools mentioned under ‘Contributions’, in one format. E.g., <br>
 - BioRender. (2020). Image created by Silva, A. Retrieved October 30,
   2020, from <https://app.biorender.com/>
 
-- McCarthy, D. J., Chen Y. and Smyth, G. K. (2012). Differential
+- Chang, W., J. Cheng, J. Allaire, C. Sievert, B. Schloerke, Y. Xie, J.
+  Allen, J. McPherson, A. Dipert, B. Borges (2023). *shiny: Web
+  Application Framework for R*. R package version 1.8.0,
+  <https://CRAN.R-project.org/package=shiny>
+
+- McCarthy, D. J., Y. Chen and G. K. Smyth (2012). Differential
   expression analysis of multifactor RNA-Seq experiments with respect to
   biological variation. *Nucleic Acids Research* 40. 4288-4297.
   <https://pubmed.ncbi.nlm.nih.gov/22287627/>
@@ -153,16 +158,24 @@ and tools mentioned under ‘Contributions’, in one format. E.g., <br>
   computing. R Foundation for Statistical Computing, Vienna, Austria.
   <https://www.R-project.org/>
 
+- Robinson, M. D., D.J. McCarthy and G. K. Smyth (2010). edgeR: a
+  Bioconductor package for differential expression analysis of digital
+  gene expression data. *Bioinformatics* 26, 139-140.
+  <https://pubmed.ncbi.nlm.nih.gov/19910308/>
+
 - Schwarz, G. (1978). Estimating the dimension of a model. *The Annals
   of Statistics* 6, 461–464.
   <https://projecteuclid.org/euclid.aos/1176344136>.
 
-- Scrucca, L., Fop, M., Murphy, T. B. and Raftery, A. E. (2016) mclust
-  5: clustering, classification and density estimation using Gaussian
+- Scrucca, L., M. Fop, T. B. Murphy and A. E. Raftery (2016) mclust 5:
+  clustering, classification and density estimation using Gaussian
   finite mixture models. *The R Journal* 8(1), 289-317.
   <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5096736/>
 
-- Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton,
+- Wickham, H. ggplot2: Elegant Graphics for Data Analysis.
+  Springer-Verlag New York, 2016.
+
+- Wickham, H. and J. Bryan (2019). *R Packages* (2nd edition). Newton,
   Massachusetts: O’Reilly Media. <https://r-pkgs.org/>
 
 ## Acknowledgements
