@@ -231,6 +231,8 @@ permission to share their packages! <br>
 
 - [TMscoreAlign](https://github.com/kevqyzhu/TMscoreAlign)
 
+- [TRexDAD](https://github.com/yunyicheng/TRexDAD)
+
 - [TRNValStandVis](https://github.com/Mogtaba-Alim/TRNValStandVis)
 
 ### 2022
