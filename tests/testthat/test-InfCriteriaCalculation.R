@@ -22,12 +22,12 @@ test_that("model fitting with three clusters", {
     observations = observations,
     probability = probability)
 
-  expect_type(InformationCriteria, "list")
-  expect_s3_class(InformationCriteria, "InfCriteriaCalculation")
-  expect_length(InformationCriteria, 3)
-  expect_identical(trunc(InformationCriteria$BICresults), 2202)
-  expect_identical(trunc(InformationCriteria$AICresults), 2060)
-  expect_identical(trunc(InformationCriteria$ICLresults), 2202)
+  testthat::expect_type(InformationCriteria, "list")
+  testthat::expect_s3_class(InformationCriteria, "InfCriteriaCalculation")
+  testthat::expect_length(InformationCriteria, 3)
+  testthat::expect_identical(trunc(InformationCriteria$BICresults), 2202)
+  testthat::expect_identical(trunc(InformationCriteria$AICresults), 2060)
+  testthat::expect_identical(trunc(InformationCriteria$ICLresults), 2202)
 })
 
 
@@ -47,12 +47,12 @@ test_that("model fitting with two clusters", {
     probability = probability)
 
 
-  expect_type(InformationCriteria, "list")
-  expect_s3_class(InformationCriteria, "InfCriteriaCalculation")
-  expect_length(InformationCriteria, 3)
-  expect_identical(trunc(InformationCriteria$BICresults), 4195)
-  expect_identical(trunc(InformationCriteria$AICresults), 4058)
-  expect_identical(trunc(InformationCriteria$ICLresults), 4195)
+  testthat::expect_type(InformationCriteria, "list")
+  testthat::expect_s3_class(InformationCriteria, "InfCriteriaCalculation")
+  testthat::expect_length(InformationCriteria, 3)
+  testthat::expect_identical(trunc(InformationCriteria$BICresults), 4195)
+  testthat::expect_identical(trunc(InformationCriteria$AICresults), 4058)
+  testthat::expect_identical(trunc(InformationCriteria$ICLresults), 4195)
 })
 
 context("Checking for invalid user input for InfCriteriaCalculation")
@@ -65,7 +65,7 @@ test_that("InfCriteriaCalculation error upon invalid user input", {
   probability = c(0.4, 0.6)
 
   # loglikelihood provided as character
-  expect_error(InformationCriteria <- InfCriteriaCalculation(
+  testthat::expect_error(InformationCriteria <- InfCriteriaCalculation(
     loglikelihood = "-2001.01",
     nClusters = nClusters,
     dimensionality = dimensionality,
@@ -73,7 +73,7 @@ test_that("InfCriteriaCalculation error upon invalid user input", {
     probability = probability))
 
   # nClusters provided as character
-  expect_error(InformationCriteria <- InfCriteriaCalculation(
+  testthat::expect_error(InformationCriteria <- InfCriteriaCalculation(
     loglikelihood = loglikelihood,
     nClusters = "2",
     dimensionality = dimensionality,
@@ -81,7 +81,7 @@ test_that("InfCriteriaCalculation error upon invalid user input", {
     probability = probability))
 
   # dimensionality provided as a list
-  expect_error(InformationCriteria <- InfCriteriaCalculation(
+  testthat::expect_error(InformationCriteria <- InfCriteriaCalculation(
     loglikelihood = loglikelihood,
     nClusters = nClusters,
     dimensionality = list(6),
@@ -89,7 +89,7 @@ test_that("InfCriteriaCalculation error upon invalid user input", {
     probability = probability))
 
   # observations provided as character
-  expect_error(InformationCriteria <- InfCriteriaCalculation(
+  testthat::expect_error(InformationCriteria <- InfCriteriaCalculation(
     loglikelihood = loglikelihood,
     nClusters = nClusters,
     dimensionality = dimensionality,
@@ -97,7 +97,7 @@ test_that("InfCriteriaCalculation error upon invalid user input", {
     probability = probability))
 
   # probability provided as a list
-  expect_error(InformationCriteria <- InfCriteriaCalculation(
+  testthat::expect_error(InformationCriteria <- InfCriteriaCalculation(
     loglikelihood = loglikelihood,
     nClusters = nClusters,
     dimensionality = dimensionality,
@@ -105,7 +105,7 @@ test_that("InfCriteriaCalculation error upon invalid user input", {
     probability = list(probability)))
 
   # probability doesn't add to 1
-  expect_error(InformationCriteria <- InfCriteriaCalculation(
+  testthat::expect_error(InformationCriteria <- InfCriteriaCalculation(
     loglikelihood = loglikelihood,
     nClusters = nClusters,
     dimensionality = dimensionality,
