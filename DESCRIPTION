@@ -28,8 +28,7 @@ Suggests:
     testthat,
     knitr,
     rmarkdown,
-    RTCGA.rnaseq,
-    shinyalert
+    RTCGA.rnaseq
 VignetteBuilder: knitr
 URL: https://github.com/anjalisilva/TestingPackage
 BugReports: https://github.com/anjalisilva/TestingPackage/issues
