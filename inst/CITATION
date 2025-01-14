@@ -5,6 +5,8 @@ citEntry(entry = "Unpublished",
   author       = "Anjali Silva",
   note         = "Updated version with revisions",
   year         = "2022 (revised 2025)",
+  url          = "https://github.com/anjalisilva/TestingPackage",
+
 
   textVersion  =
   paste("Silva, A. (2022; revised 2025) TestingPackage: An Example R Package For BCB410H.
