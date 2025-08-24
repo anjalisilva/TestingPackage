@@ -156,7 +156,7 @@ and tools mentioned under ‘Contributions’, in one format. E.g., <br>
   biological variation. *Nucleic Acids Research* 40. 4288-4297.
   <https://pubmed.ncbi.nlm.nih.gov/22287627/>
 
-- R Core Team (2024). R: A language and environment for statistical
+- R Core Team (2025). R: A language and environment for statistical
   computing. R Foundation for Statistical Computing, Vienna, Austria.
   <https://www.R-project.org/>
 
@@ -184,7 +184,7 @@ and tools mentioned under ‘Contributions’, in one format. E.g., <br>
 
 Provide the following text, customized to your R package. E.g., <br>
 <br> <br> This package was developed as part of an assessment for
-2019-2024 BCB410H: Applied Bioinformatics course at the University of
+2019-2025 BCB410H: Applied Bioinformatics course at the University of
 Toronto, Toronto, CANADA. `TestingPackage` welcomes issues, enhancement
 requests, and other contributions. To submit an issue, use the [GitHub
 issues](https://github.com/anjalisilva/TestingPackage/issues). Many
