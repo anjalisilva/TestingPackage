@@ -118,7 +118,7 @@ InfCriteriaCalculation <- function(loglikelihood = -5000,
                                    probability = c(0.6, 0.4)) {
 
   # Performing checks of user input
-  if (typeof(loglikelihood) != "double" & class(loglikelihood) != "numeric") {
+  if (!is.numeric(loglikelihood)) {
     stop("Loglikelihood argument should be provided a negative value of
           class numeric indicating the log-likelihood.")
   }

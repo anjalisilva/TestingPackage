@@ -30,7 +30,7 @@ InfCriteriaPlot <- function(infValues = list(10229.08, 10180, 10229.08),
                             plotTitle = NA) {
 
   # Performing checks of user input
-  if (class(unlist(infValues)) != "numeric") {
+  if (!is.numeric(unlist(infValues))) {
     stop("infValues argument should be provided a list of
          numeric values corresponding to BIC, AIC and ICL,
          respectively.")
