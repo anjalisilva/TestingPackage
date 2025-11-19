@@ -100,7 +100,7 @@ Provide full references for all sources used, including for the packages and too
 - McCarthy, D. J., Y. Chen and  G. K. Smyth (2012). Differential expression analysis of multifactor RNA-Seq experiments with respect to biological variation. *Nucleic Acids Research* 40. 4288-4297.
 https://pubmed.ncbi.nlm.nih.gov/22287627/
 
-- R Core Team (2024). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+- R Core Team (2025). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
 
 - Robinson, M. D.,  D.J. McCarthy and G. K. Smyth (2010). edgeR: a
   Bioconductor package for differential expression analysis

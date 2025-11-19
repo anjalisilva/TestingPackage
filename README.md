@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# TestingPackage
+# TestingPackage 
 
 An Example R Package For BCB410H: Applied Bioinformatics.
 
