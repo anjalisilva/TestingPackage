@@ -3,7 +3,6 @@
 export(InfCriteriaCalculation)
 export(InfCriteriaPlot)
 export(NormFactors)
-export(runTestingPackage)
 import(mclust)
 import(stats)
 importFrom(edgeR,calcNormFactors)
