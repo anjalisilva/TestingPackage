@@ -105,7 +105,7 @@ https://pubmed.ncbi.nlm.nih.gov/22287627/
 - Robinson, M. D.,  D.J. McCarthy and G. K. Smyth (2010). edgeR: a
   Bioconductor package for differential expression analysis
   of digital gene expression data. *Bioinformatics* 26,
-  139-140. https://pubmed.ncbi.nlm.nih.gov/19910308/ 
+  139-140. https://pubmed.ncbi.nlm.nih.gov/19910308/  
 
 - Schwarz, G. (1978). Estimating the dimension of a model. *The Annals of Statistics* 6, 461–464. https://projecteuclid.org/euclid.aos/1176344136.
 

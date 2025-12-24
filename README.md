@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# TestingPackage 
+# TestingPackage
 
 An Example R Package For BCB410H: Applied Bioinformatics.
 
@@ -44,8 +44,8 @@ work flow in bioinformatics or computational biology. The tool should
 contain functions to perform analysis of biological data and to produce
 a compelling graphical output, ideally to support for exploratory
 analysis. The `TestingPackage` package was developed using
-`R version 4.2.1 (2022-06-23)`,
-`Platform: x86_64-apple-darwin17.0 (64-bit)` and
+`R version 4.5.1 (2025-06-13)`,
+`Platform: x86_64-apple-darwin20 (64-bit)` and
 `Running under: macOS Ventura 13.2`.
 
 ## Installation
@@ -196,6 +196,50 @@ Packages developed by BCB410 alumni. Many thanks to those who provided
 permission to share their packages! <br>
 
 ### 2025
+
+- [BioTokenizeR](https://github.com/sophiamjiali/BioTokenizeR)
+
+- [CeDExplorer](https://github.com/yuxi229/CeDExplorer)
+
+- [clustsimlR](https://github.com/laaeett/clustsimlR)
+
+- [cryoCompare](https://github.com/jeremyschan/cryoCompare)
+
+- [endoSignatureR](https://github.com/amcwong/endoSignatureR)
+
+- [ExprCompareR](https://github.com/tanaya2026/ExprCompareR)
+
+- [getNC](https://github.com/ZhanyanGuo/getNC)
+
+- [HistoLearn](https://github.com/yuxizzz/HistoLearn)
+
+- [MetaNetis](https://github.com/dujay971226/MetaNetis)
+
+- [miRNARefine](https://github.com/feiyangsun246/miRNARefine)
+
+- [MultiCoex](https://github.com/calebji123/MultiCoex)
+
+- [PharmacoExploreR](https://github.com/vpergola22/PharmacoExploreR)
+
+- [PSDExplorer](https://github.com/anaciur/PSDExplorer)
+
+- [QCseq](https://github.com/anzarlv/QCseq)
+
+- [ReAnnotateR](https://github.com/giills/ReAnnotateR)
+
+- [scClustAnnot](https://github.com/DDMMMAA/scClustAnnot)
+
+- [scPipeVis](https://github.com/ArhanUofT/scPipeVis)
+
+- [SeuratSourcery](https://github.com/josephDURAISINGH/SeuratSourcery)
+
+- [SigCooccurrence](https://github.com/wennapengooin/SigCooccurrence)
+
+- [TransComp](https://github.com/xsabrin/TransComp)
+
+- [TRskim](https://github.com/hassa963/TRskim)
+
+- [TWASviz](https://github.com/mding010705/TWASviz)
 
 ### 2024
 
